@@ -78,8 +78,8 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/princehk0101/django-hospital-management-system.git
-cd django-hospital-management-system
+git clone https://github.com/princehk0101/book-hospital-appointments-across-all-states.git
+cd book-hospital-appointments-across-all-states
 ```
 
 ### 2. Create a virtual environment and install dependencies
