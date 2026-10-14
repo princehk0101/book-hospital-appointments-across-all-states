@@ -236,14 +236,7 @@ The application reads a PostgreSQL connection string from `DATABASE_URL`. Use a 
    ```
 
    Add `APPOINTMENT_FEE`, Razorpay test keys, or `GEMINI_API_KEY` only if you need those integrations.
-5. After deployment, open the Render Shell and run:
-
-   ```bash
-   python manage.py sync_env_admin
-   python manage.py seed_up_hospitals --file ./up_hospitals_wise_name.json
-   ```
-
-   The seed command is optional and creates fictional demo records. For a custom domain, set its hostname in `ALLOWED_HOSTS` as a comma-separated value.
+5. The build script applies migrations and loads the bundled sample district/hospital directory and fictional demo doctors. It is safe to rerun during later builds. For a custom domain, set its hostname in `ALLOWED_HOSTS` as a comma-separated value.
 
 ---
 
