@@ -2,93 +2,27 @@
 {% load static %}
 
 {% block title %}Book Appointment{% endblock %}
-
-{% block page_heading %}
-<i class="fa fa-calendar-check me-2"></i> Book an Appointment
-{% endblock %}
-
+{% block page_heading %}<i class="fa fa-calendar-check me-2"></i> Book an Appointment{% endblock %}
 {% block content %}
-
-<div class="card shadow-sm border-0 p-4">
-
-    <h3 class="fw-bold text-primary mb-4">
-        <i class="fa fa-calendar-check me-2"></i> Book an Appointment
-    </h3>
-
-    <form method="POST">
+<div class="card shadow-sm border-0 p-3 p-md-4">
+    <h3 class="fw-bold text-primary mb-2">Book an Appointment</h3>
+    <p class="text-muted">Choose a location, then select an available doctor and appointment time.</p>
+    {% for message in messages %}<div class="alert {% if message.tags == 'error' %}alert-danger{% else %}alert-{{ message.tags|default:'info' }}{% endif %}" role="alert">{{ message }}</div>{% endfor %}
+    {% if not appointment_fee %}<div class="alert alert-info">Payment amount is not configured yet. You can book without a charge.</div>{% endif %}
+    <form method="post" id="bookingForm" data-hospitals-url="{% url 'api_hospitals' %}" data-departments-url="{% url 'api_departments' %}" data-doctors-url="{% url 'api_hospital_doctors' %}">
         {% csrf_token %}
-
         <div class="row g-3">
-
-            <!-- DEPARTMENT -->
-            <div class="col-md-6">
-                <label class="fw-semibold">Select Department</label>
-                <select name="department" id="departmentSelect" class="form-select" required>
-                    <option value="" disabled selected>Select Department</option>
-
-                    {% for dept in departments %}
-                        <option value="{{ dept }}">{{ dept }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <!-- DOCTOR -->
-            <div class="col-md-6">
-                <label class="fw-semibold">Select Doctor</label>
-                <select name="doctor" id="doctorSelect" class="form-select" required>
-                    <option value="" disabled selected>Select Doctor</option>
-
-                    {% for d in doctors %}
-                        <option value="{{ d.id }}" data-dept="{{ d.department }}"
-                            {% if d.id|stringformat:"s" == preselected_id %}selected{% endif %}>
-                            Dr. {{ d.user.get_full_name }} ({{ d.department }})
-                        </option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <!-- DATE -->
-            <div class="col-md-6">
-                <label class="fw-semibold">Appointment Date</label>
-                <input type="date" name="date" class="form-control" required>
-            </div>
-
-            <!-- TIME -->
-            <div class="col-md-6">
-                <label class="fw-semibold">Appointment Time</label>
-                <input type="time" name="time" class="form-control" required>
-            </div>
-
-            <!-- SYMPTOMS -->
-            <div class="col-12">
-                <label class="fw-semibold">Problem / Symptoms</label>
-                <textarea name="symptoms" rows="3" class="form-control"
-                          placeholder="Describe your health issue..." required></textarea>
-            </div>
+            <div class="col-md-6"><label class="form-label" for="districtSelect">District</label><select class="form-select" name="district" id="districtSelect" required><option value="">Choose a district</option>{% for district in districts %}<option value="{{ district.id }}">{{ district.name }}</option>{% endfor %}</select></div>
+            <div class="col-md-6"><label class="form-label" for="hospitalSelect">Hospital</label><select class="form-select" name="hospital" id="hospitalSelect" required disabled><option value="">Select district first</option></select></div>
+            <div class="col-md-6"><label class="form-label" for="departmentSelect">Department</label><select class="form-select" name="department" id="departmentSelect" required disabled><option value="">Select hospital first</option></select></div>
+            <div class="col-md-6"><label class="form-label" for="doctorSelect">Doctor</label><select class="form-select" name="doctor" id="doctorSelect" required disabled><option value="">Select department first</option></select></div>
+            <div class="col-md-6"><label class="form-label" for="dateSelect">Appointment date</label><input class="form-control" type="date" name="date" id="dateSelect" min="{{ min_date }}" required></div>
+            <div class="col-md-6"><label class="form-label" for="timeSelect">Appointment time</label><input class="form-control" type="time" name="time" id="timeSelect" required></div>
+            <div class="col-12"><label class="form-label" for="symptoms">Problem / symptoms <span class="text-muted">(optional)</span></label><textarea class="form-control" id="symptoms" name="symptoms" rows="3" maxlength="2000"></textarea></div>
         </div>
-
-        <button class="btn btn-primary rounded-pill px-4 mt-3">
-            Book Appointment
-        </button>
-
+        <div class="alert alert-light border mt-4 mb-3" id="bookingSummary" aria-live="polite" style="white-space: pre-line">Select a district, hospital, department, doctor, date and time to review your booking.</div>
+        <button class="btn btn-primary rounded-pill px-4" type="submit" id="confirmBooking" disabled>{% if appointment_fee %}Continue to ₹{{ appointment_fee }} payment{% else %}Confirm Appointment{% endif %}</button>
     </form>
-
 </div>
-
-<!-- FILTER DOCTORS BY DEPARTMENT -->
-<script>
-document.getElementById("departmentSelect").addEventListener("change", function () {
-    let selectedDept = this.value;
-    let doctors = document.querySelectorAll("#doctorSelect option");
-
-    doctors.forEach(opt => {
-        if (opt.value === "") return; // ignore placeholder option
-        opt.style.display = (opt.dataset.dept === selectedDept) ? "block" : "none";
-    });
-
-    // Automatically select first matching doctor
-    document.getElementById("doctorSelect").value = "";
-});
-</script>
-
 {% endblock %}
+{% block extra_js %}<script src="{% static 'js/booking.js' %}" defer></script>{% endblock %}

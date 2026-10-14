@@ -60,6 +60,10 @@
                         <i class="fa fa-calendar-plus me-2"></i> Book Appointment
                     </a>
 
+                    <a href="{% url 'health_chat' %}" class="list-group-item list-group-item-action">
+                        <i class="fa fa-comments me-2"></i> Health Chat (हिंदी / English)
+                    </a>
+
                     <a href="{% url 'patient_doctors_list' %}" class="list-group-item list-group-item-action">
                         <i class="fa fa-user-doctor me-2"></i> Doctors List
                     </a>
@@ -88,5 +92,6 @@
         </div>
     </div>
 
+    {% block extra_js %}{% endblock %}
 </body>
 </html>

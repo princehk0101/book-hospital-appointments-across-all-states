@@ -28,8 +28,8 @@
                 <form method="POST">
                     {% csrf_token %}
 
-                    <label class="fw-semibold">Email</label>
-                    <input type="email" class="form-control mb-3" name="email" required>
+                    <label class="fw-semibold">Username or email</label>
+                    <input type="text" class="form-control mb-3" name="email" autocomplete="username" required>
 
                     <label class="fw-semibold">Password</label>
                     <input type="password" class="form-control mb-3" name="password" required>

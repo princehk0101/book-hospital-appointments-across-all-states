@@ -3,6 +3,20 @@
 
 {% block title %}MeCare HMS - Home{% endblock %}
 
+{% block extra_head %}
+<style>
+    .department-marquee { overflow: hidden; position: relative; width: 100%; padding: .5rem 0 1.25rem; mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent); }
+    .department-marquee-track { display: flex; width: max-content; animation: department-scroll 48s linear infinite reverse; }
+    .department-marquee:hover .department-marquee-track, .department-marquee:focus-within .department-marquee-track { animation-play-state: paused; }
+    .department-marquee-group { display: flex; flex: 0 0 auto; gap: 1.25rem; padding-right: 1.25rem; }
+    .department-card { align-items: center; background: #fff; border: 1px solid #e8eef7; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(28, 61, 104, .08); display: flex; flex: 0 0 205px; flex-direction: column; justify-content: center; min-height: 170px; padding: 1.25rem; text-align: center; width: 205px; }
+    .department-icon { align-items: center; background: #edf4ff; border-radius: 50%; color: #1769e8; display: inline-flex; flex: 0 0 68px; font-size: 1.8rem; height: 68px; justify-content: center; margin-bottom: .9rem; width: 68px; }
+    .department-card h3 { color: #233b5b; font-size: 1rem; font-weight: 700; margin: 0; }
+    @keyframes department-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .department-marquee { overflow-x: auto; mask-image: none; } .department-marquee-track { animation: none; } }
+</style>
+{% endblock %}
+
 {% block content %}
 
 
@@ -50,45 +64,34 @@
 
 
 
-<section class="services py-5">
+<section class="services py-5 bg-light">
     <div class="container">
-
         <div class="text-center mb-5">
             <h2 class="fw-bold text-dark">Our Medical Services</h2>
-            <p class="text-secondary">Professional care and quality medical facilities for everyone.</p>
+            <p class="text-secondary">Explore all 20 hospital departments. Icons scroll automatically from left to right.</p>
         </div>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="card service-card p-4 text-center">
-                    <i class="fa-solid fa-heart-pulse text-primary fs-1 mb-3"></i>
-                    <h5 class="fw-bold">Cardiology</h5>
-                    <p class="text-secondary">Top-notch heart care with modern technology and expert doctors.</p>
+        <div class="department-marquee" aria-label="Hospital departments scrolling automatically">
+            <div class="department-marquee-track">
+                <div class="department-marquee-group">
+                    {% for department in departments %}
+                    <article class="department-card">
+                        <span class="department-icon" aria-hidden="true"><i class="fa-solid {{ department.icon }}"></i></span>
+                        <h3>{{ department.name }}</h3>
+                    </article>
+                    {% endfor %}
+                </div>
+                <div class="department-marquee-group" aria-hidden="true">
+                    {% for department in departments %}
+                    <article class="department-card">
+                        <span class="department-icon"><i class="fa-solid {{ department.icon }}"></i></span>
+                        <h3>{{ department.name }}</h3>
+                    </article>
+                    {% endfor %}
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card service-card p-4 text-center">
-                    <i class="fa-solid fa-brain text-primary fs-1 mb-3"></i>
-                    <h5 class="fw-bold">Neurology</h5>
-                    <p class="text-secondary">Precise diagnosis and treatment of neurological disorders.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card service-card p-4 text-center">
-                    <i class="fa-solid fa-children text-primary fs-1 mb-3"></i>
-                    <h5 class="fw-bold">Pediatrics</h5>
-                    <p class="text-secondary">Complete medical care for infants, toddlers and children.</p>
-                </div>
-            </div>
-
         </div>
-
     </div>
 </section>
-
 
 
 <section class="features py-5 bg-light">
@@ -228,48 +231,7 @@
 
 
 
-<section class="py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Our Departments</h2>
-            <p class="text-secondary">We cover all important medical specialties.</p>
-        </div>
 
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="department-card p-4 text-center shadow-sm rounded bg-white">
-                    <i class="fa-solid fa-heart-pulse text-primary fs-2 mb-2"></i>
-                    <h6 class="fw-bold mb-1">Cardiology</h6>
-                    <p class="text-secondary small">Heart care and cardiac surgery.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="department-card p-4 text-center shadow-sm rounded bg-white">
-                    <i class="fa-solid fa-brain text-primary fs-2 mb-2"></i>
-                    <h6 class="fw-bold mb-1">Neurology</h6>
-                    <p class="text-secondary small">Care for the brain and nervous system.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="department-card p-4 text-center shadow-sm rounded bg-white">
-                    <i class="fa-solid fa-bone text-primary fs-2 mb-2"></i>
-                    <h6 class="fw-bold mb-1">Orthopedics</h6>
-                    <p class="text-secondary small">Treatments for bones and joints.</p>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="department-card p-4 text-center shadow-sm rounded bg-white">
-                    <i class="fa-solid fa-virus-covid text-primary fs-2 mb-2"></i>
-                    <h6 class="fw-bold mb-1">General Medicine</h6>
-                    <p class="text-secondary small">Routine checkups and diagnosis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 

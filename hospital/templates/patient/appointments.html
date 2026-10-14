@@ -39,9 +39,12 @@
                             <tr>
                                 <th>Doctor</th>
                                 <th>Department</th>
+                                <th>Hospital</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Status</th>
+                                <th>Appointment slip</th>
+                                <th></th>
                             </tr>
                         </thead>
 
@@ -54,6 +57,7 @@
                                 </td>
 
                                 <td>{{ appt.doctor.department }}</td>
+                                <td>{% if appt.doctor.hospital %}{{ appt.doctor.hospital.name }}, {{ appt.doctor.hospital.district.name }}{% else %}Hospital pending assignment{% endif %}</td>
 
                                 <td>{{ appt.date|date:"d M Y" }}</td>
 
@@ -61,14 +65,31 @@
 
                                 <td>
                                     <span class="badge 
-                                        {% if appt.status == 'Confirmed' %} bg-primary
-                                        {% elif appt.status == 'Waiting' %} bg-secondary
+                                        {% if appt.status == 'Waiting' %} bg-primary
                                         {% elif appt.status == 'Completed' %} bg-success
                                         {% elif appt.status == 'Cancelled' %} bg-danger
+                                        {% elif appt.status == 'Pending Payment' %} bg-warning text-dark
                                         {% endif %}
                                     ">
                                         {{ appt.status }}
                                     </span>
+                                </td>
+                                <td>
+                                    {% if appt.payment_status == 'Paid' or appt.payment_status == 'Legacy' %}
+                                        {% if appt.status != 'Cancelled' %}
+                                        <a class="btn btn-sm btn-outline-primary" href="{% url 'appointment_pdf' appt.booking_reference %}">Download PDF</a>
+                                        <div class="small text-muted">Ref: {{ appt.booking_reference }}</div>
+                                        {% else %}<span class="badge bg-secondary">Cancelled</span>{% endif %}
+                                    {% elif appt.status == 'Cancelled' %}<span class="badge bg-secondary">Cancelled</span>
+                                    {% elif appt.payment_status == 'Pending' %}
+                                        <a class="btn btn-sm btn-warning" href="{% url 'patient_payment_checkout' appt.id %}">Continue to payment</a>
+                                    {% else %}<span class="badge bg-secondary">{{ appt.status }}</span>{% endif %}
+                                </td>
+                                <td>
+                                    {% if appt.payment_status == 'Legacy' or appt.payment_status == 'Paid' %}
+                                    {% if appt.status != 'Cancelled' and appt.status != 'Completed' %}
+                                    <form method="post" action="{% url 'patient_cancel_appointment' appt.id %}">{% csrf_token %}<button class="btn btn-sm btn-outline-danger" type="submit">Cancel</button></form>
+                                    {% endif %}{% endif %}
                                 </td>
                             </tr>
                             {% endfor %}
@@ -99,9 +120,12 @@
                             <tr>
                                 <th>Doctor</th>
                                 <th>Department</th>
+                                <th>Hospital</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Status</th>
+                                <th>Appointment slip</th>
+                                <th></th>
                             </tr>
                         </thead>
 
@@ -114,6 +138,7 @@
                                 </td>
 
                                 <td>{{ appt.doctor.department }}</td>
+                                <td>{% if appt.doctor.hospital %}{{ appt.doctor.hospital.name }}, {{ appt.doctor.hospital.district.name }}{% else %}Hospital pending assignment{% endif %}</td>
 
                                 <td>{{ appt.date|date:"d M Y" }}</td>
 
@@ -129,6 +154,8 @@
                                         {{ appt.status }}
                                     </span>
                                 </td>
+                                <td>{% if appt.payment_status == 'Paid' or appt.payment_status == 'Legacy' %}{% if appt.status != 'Cancelled' %}<a class="btn btn-sm btn-outline-primary" href="{% url 'appointment_pdf' appt.booking_reference %}">Download PDF</a><div class="small text-muted">Ref: {{ appt.booking_reference }}</div>{% else %}<span class="badge bg-secondary">Cancelled</span>{% endif %}{% else %}<span class="badge bg-secondary">{{ appt.payment_status }}</span>{% endif %}</td>
+                                <td></td>
                             </tr>
                             {% endfor %}
                         </tbody>

@@ -1,0 +1,65 @@
+{% extends "patient/patient_base.html" %}
+{% block title %}Appointment Payment{% endblock %}
+{% block page_heading %}Appointment Payment{% endblock %}
+{% block content %}
+<div class="card shadow-sm border-0 p-4 mx-auto" style="max-width:720px">
+    <h3 class="fw-bold text-primary">Appointment payment</h3>
+    <p>Pay ₹{{ appointment.payment_amount }} to confirm this appointment.</p>
+    <div class="alert alert-info">Razorpay test mode is active. Test payments do not debit a real bank account.</div>
+    <div id="paymentMessage" class="alert alert-danger d-none" role="alert"></div>
+    <form id="paymentCsrfForm">{% csrf_token %}</form>
+    <button id="payButton" type="button" class="btn btn-primary rounded-pill px-4">Pay ₹{{ appointment.payment_amount }}</button>
+    <a href="{% url 'patient_appointments' %}" class="btn btn-link mt-2">Back to my appointments</a>
+</div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+(() => {
+    const button = document.getElementById('payButton');
+    const message = document.getElementById('paymentMessage');
+    const csrf = document.querySelector('#paymentCsrfForm [name=csrfmiddlewaretoken]').value;
+    const showError = text => { message.textContent = text; message.classList.remove('d-none'); };
+    let callbackReceived = false;
+
+    async function verifyPayment(paymentResponse) {
+        try {
+            const response = await fetch("{{ verify_url }}", {
+                method: 'POST',
+                headers: {'X-CSRFToken': csrf, 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'},
+                body: new URLSearchParams(paymentResponse),
+            });
+            const result = await response.json();
+            if (result.ok) { window.location.assign(result.slip_url); return; }
+            showError(result.error || 'Payment verification failed. Please retry.');
+            button.disabled = false;
+        } catch (_error) {
+            showError('Could not verify payment right now. Please retry.');
+            button.disabled = false;
+        }
+    }
+
+    button.addEventListener('click', () => {
+        if (!window.Razorpay) { showError('Razorpay Checkout did not load. Check your internet connection.'); return; }
+        button.disabled = true;
+        const checkout = new Razorpay({
+            key: "{{ razorpay_key_id|escapejs }}",
+            amount: {{ amount_paise }}, currency: 'INR', name: 'MeCare HMS',
+            description: 'Appointment fee', order_id: "{{ appointment.razorpay_order_id|escapejs }}",
+            prefill: {name: "{{ appointment.patient.user.get_full_name|escapejs }}", email: "{{ appointment.patient.user.email|escapejs }}"},
+            handler: response => { callbackReceived = true; verifyPayment(response); },
+            modal: {ondismiss: () => {
+                if (callbackReceived) return;
+                fetch("{{ failure_url }}", {method: 'POST', headers: {'X-CSRFToken': csrf}});
+                showError('Payment window closed. Please start a new appointment booking.');
+            }}
+        });
+        checkout.on('payment.failed', response => {
+            callbackReceived = true;
+            fetch("{{ failure_url }}", {method: 'POST', headers: {'X-CSRFToken': csrf}});
+            showError(response.error?.description || 'Payment failed. Please start a new booking.');
+        });
+        checkout.open();
+        button.disabled = false;
+    });
+})();
+</script>
+{% endblock %}

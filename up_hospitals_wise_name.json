@@ -1,0 +1,2240 @@
+[
+  {
+    "district": "Lucknow",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "King George's Medical University (KGMU) Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences (SGPGIMS)",
+        "type": "Government",
+        "departments": [
+          "Cardiology",
+          "Cardiothoracic & Vascular Surgery",
+          "Neurology",
+          "Neurosurgery",
+          "Nephrology",
+          "Urology",
+          "Gastroenterology",
+          "GI Surgery",
+          "Endocrinology",
+          "Endocrine Surgery",
+          "Haematology",
+          "Clinical Immunology",
+          "Medical Genetics",
+          "Pulmonary Medicine",
+          "Plastic Surgery",
+          "Paediatric Surgery",
+          "Nuclear Medicine",
+          "Radiodiagnosis",
+          "Anaesthesia"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences (RMLIMS)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Era's Lucknow Medical College & Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Balrampur Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Kanpur Nagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "LLR Hospital (GSVM Medical College)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Rama Medical College Hospital & Research Centre",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Regency Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Sir Sunderlal Hospital (IMS BHU)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Pt. Deen Dayal Upadhyay District Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Mahamana Pandit Madan Mohan Malaviya Cancer Centre (MPMMCC)",
+        "type": "Government",
+        "departments": [
+          "Medical Oncology",
+          "Surgical Oncology",
+          "Radiation Oncology",
+          "Haematology",
+          "Palliative Care",
+          "Radiology",
+          "Pathology"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Swaroop Rani Nehru (SRN) Hospital (MLN Medical College)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Tej Bahadur Sapru (Beli) Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Agra",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "S.N. Medical College Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "F.H. Medical College & Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Gorakhpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Baba Raghav Das (BRD) Medical College Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "AIIMS Gorakhpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Meerut",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "LLRM Medical College Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Chhatrapati Shivaji Subharti Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Santosh Medical College & Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "MMG District Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Institute of Medical Sciences (GIMS), Greater Noida",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Sharda Hospital, Greater Noida",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Jaypee Hospital, Noida",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Fortis Hospital, Noida",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Kailash Hospital, Noida",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Bareilly",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Rohilkhand Medical College & Hospital (RMCH)",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "SRMS Institute of Medical Sciences (SRMS IMS)",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Aligarh",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Jawaharlal Nehru Medical College Hospital (AMU)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      },
+      {
+        "name": "Malkhan Singh District Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Jhansi",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Maharani Laxmi Bai Medical College Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Moradabad",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Teerthanker Mahaveer Medical College & Research Centre Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Ayodhya",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Faizabad (Ayodhya)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Mathura",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "K.D. Medical College Hospital & Research Centre",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Saharanpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Shaikh-UL-Hind Maulana Mahmood Hasan Medical College Hospital, Saharanpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Etawah",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "UP University of Medical Sciences (UPUMS) Hospital, Saifai",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Banda",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Rani Durgavati Medical College Hospital",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Jalaun",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Orai (Jalaun)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Azamgarh",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College & Super Specialty Hospital, Azamgarh",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Jaunpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Uma Nath Singh Autonomous State Medical College Hospital, Jaunpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Kannauj",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Kannauj",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Badaun",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Badaun",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Shahjahanpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Shahjahanpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Firozabad",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Firozabad",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Etah",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Etah",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Basti",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Government Medical College Hospital, Basti",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Muzaffarnagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Muzaffarnagar Medical College & Hospital",
+        "type": "Private",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology",
+          "Critical Care"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Pratapgarh",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Pratapgarh",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Bulandshahr",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Kalyan Singh Government Medical College Hospital, Bulandshahr",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Shamli",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Ajay Sangaal Institute of Medical Sciences & Ayushman Hospital, Shamli",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Sultanpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Sultanpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Kanpur Dehat",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Akbarpur (Kanpur Dehat)",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Kushinagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Kushinagar",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Lalitpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Lalitpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Pilibhit",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Pilibhit",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Bijnor",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Mahatma Vidur Autonomous State Medical College Hospital, Bijnor",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Kaushambi",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College & Hospital, Kaushambi",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Sonbhadra",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Sonbhadra",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Raebareli",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "AIIMS Raebareli",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Neurosurgery",
+          "Pulmonary Medicine",
+          "Oncology"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Ambedkar Nagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Mahamaya Rajkiya Allopathic Medical College Hospital, Ambedkar Nagar",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Siddharthnagar",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Siddharthnagar",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Deoria",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Maharshi Devraha Baba Autonomous State Medical College Hospital, Deoria",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Ghazipur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Ghazipur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Hardoi",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Hardoi",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Mirzapur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Mirzapur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Fatehpur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Autonomous State Medical College Hospital, Fatehpur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Bahraich",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "Rajkiya Allopathic Medical College Hospital, Bahraich",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": true,
+        "departments_verified": false,
+        "generic_name": false
+      }
+    ]
+  },
+  {
+    "district": "Ballia",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Ballia",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Mau",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Mau",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Barabanki",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Barabanki",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Unnao",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Unnao",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Sitapur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Sitapur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Lakhimpur Kheri",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Lakhimpur Kheri",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Gonda",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Gonda",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Maharajganj",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Maharajganj",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Rampur",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Rampur",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Hathras",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Hathras",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Mainpuri",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Mainpuri",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  },
+  {
+    "district": "Mahoba",
+    "state": "Uttar Pradesh",
+    "hospitals": [
+      {
+        "name": "District Hospital, Mahoba",
+        "type": "Government",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopaedics",
+          "Obstetrics & Gynaecology",
+          "Paediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dental",
+          "Emergency & Trauma"
+        ],
+        "hospital_found_in_web_search": false,
+        "departments_verified": false,
+        "generic_name": true
+      }
+    ]
+  }
+]

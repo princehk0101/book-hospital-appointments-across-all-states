@@ -2,6 +2,20 @@
 {% load static %}
 {% block title %}About Us - MeCare HMS{% endblock %}
 
+{% block extra_head %}
+<style>
+    .department-marquee { overflow: hidden; position: relative; width: 100%; padding: .5rem 0 1.25rem; mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent); }
+    .department-marquee-track { display: flex; width: max-content; animation: department-scroll 48s linear infinite reverse; }
+    .department-marquee:hover .department-marquee-track, .department-marquee:focus-within .department-marquee-track { animation-play-state: paused; }
+    .department-marquee-group { display: flex; flex: 0 0 auto; gap: 1.25rem; padding-right: 1.25rem; }
+    .department-card { align-items: center; background: #fff; border: 1px solid #e8eef7; border-radius: 1rem; box-shadow: 0 .5rem 1.5rem rgba(28, 61, 104, .08); display: flex; flex-direction: column; justify-content: center; min-height: 170px; padding: 1.25rem; text-align: center; width: 205px; }
+    .department-icon { align-items: center; background: #edf4ff; border-radius: 50%; color: #1769e8; display: inline-flex; flex: 0 0 68px; font-size: 1.8rem; height: 68px; justify-content: center; margin-bottom: .9rem; width: 68px; }
+    .department-card h3 { color: #233b5b; font-size: 1rem; font-weight: 700; margin: 0; }
+    @keyframes department-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .department-marquee { overflow-x: auto; mask-image: none; } .department-marquee-track { animation: none; } }
+</style>
+{% endblock %}
+
 {% block content %}
 
 <!-- BREADCRUMB BANNER -->
@@ -123,46 +137,33 @@
 </section>
 
 
-<!-- TEAM SECTION -->
+<!-- DEPARTMENT ICON CAROUSEL -->
 <section class="py-5 bg-light">
     <div class="container">
-
         <div class="text-center mb-5">
-            <h2 class="fw-bold">Our Medical Team</h2>
-            <p class="text-secondary">Highly qualified and experienced healthcare specialists.</p>
+            <h2 class="fw-bold">Explore Our Departments</h2>
+            <p class="text-secondary">Specialist care across all our hospital departments.</p>
         </div>
-
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="team-card text-center p-4 rounded bg-white shadow-sm">
-                    <img src="https://cdn.pixabay.com/photo/2024/09/03/15/21/ai-generated-9019517_1280.png"
-                        width="130" height="130" class="rounded-circle mb-3">
-                    <h5 class="fw-bold">Dr. Riya Sharma</h5>
-                    <p class="text-secondary">Cardiologist</p>
+        <div class="department-marquee" aria-label="Hospital departments scrolling automatically">
+            <div class="department-marquee-track">
+                <div class="department-marquee-group">
+                    {% for department in departments %}
+                    <article class="department-card">
+                        <span class="department-icon" aria-hidden="true"><i class="fa-solid {{ department.icon }}"></i></span>
+                        <h3>{{ department.name }}</h3>
+                    </article>
+                    {% endfor %}
+                </div>
+                <div class="department-marquee-group" aria-hidden="true">
+                    {% for department in departments %}
+                    <article class="department-card">
+                        <span class="department-icon"><i class="fa-solid {{ department.icon }}"></i></span>
+                        <h3>{{ department.name }}</h3>
+                    </article>
+                    {% endfor %}
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="team-card text-center p-4 rounded bg-white shadow-sm">
-                    <img src="https://cdn.pixabay.com/photo/2024/09/03/15/21/ai-generated-9019520_1280.png"
-                        width="130" height="130" class="rounded-circle mb-3">
-                    <h5 class="fw-bold">Dr. Aman Verma</h5>
-                    <p class="text-secondary">Neurologist</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="team-card text-center p-4 rounded bg-white shadow-sm">
-                    <img src="https://cdn.pixabay.com/photo/2016/09/29/19/55/doctor-1703644_1280.jpg"
-                        width="130" height="130" class="rounded-circle mb-3">
-                    <h5 class="fw-bold">Dr. Priya Singh</h5>
-                    <p class="text-secondary">Pediatric Specialist</p>
-                </div>
-            </div>
-
         </div>
-
     </div>
 </section>
 

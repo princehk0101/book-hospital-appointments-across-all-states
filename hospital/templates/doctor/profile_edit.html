@@ -15,8 +15,17 @@
 
         <h4 class="fw-bold mb-3">Update Your Profile</h4>
 
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
+
+            <div class="mb-4">
+                <label class="fw-semibold d-block mb-2" for="doctorPhoto"><i class="fa-solid fa-camera me-1"></i>Profile photo</label>
+                {% if doctor.profile_photo %}
+                    <img src="{{ doctor.profile_photo.url }}" alt="Current doctor profile photo" class="rounded-circle mb-3" width="112" height="112" style="object-fit:cover">
+                {% endif %}
+                <input id="doctorPhoto" type="file" name="profile_photo" class="form-control" accept="image/jpeg,image/png,image/webp">
+                <small class="text-muted">JPG, PNG, or WebP, up to 5 MB.</small>
+            </div>
 
             <div class="row g-3">
 
@@ -45,11 +54,7 @@
                 <div class="col-md-6">
                     <label class="fw-semibold">Department</label>
                     <select name="department" class="form-select" required>
-                        <option value="Cardiology" {% if doctor.department == "Cardiology" %}selected{% endif %}>Cardiology</option>
-                        <option value="Neurology" {% if doctor.department == "Neurology" %}selected{% endif %}>Neurology</option>
-                        <option value="Orthopedics" {% if doctor.department == "Orthopedics" %}selected{% endif %}>Orthopedics</option>
-                        <option value="Pediatrics" {% if doctor.department == "Pediatrics" %}selected{% endif %}>Pediatrics</option>
-                        <option value="Dermatology" {% if doctor.department == "Dermatology" %}selected{% endif %}>Dermatology</option>
+                        {% for value, label in departments %}<option value="{{ value }}" {% if doctor.department == value %}selected{% endif %}>{{ label }}</option>{% endfor %}
                     </select>
                 </div>
 

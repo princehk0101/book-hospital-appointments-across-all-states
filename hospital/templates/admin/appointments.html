@@ -1,125 +1,38 @@
-{% extends 'admin/admin_base.html' %} {% load static %} {% block title %}Manage
-Appointments - Admin Panel{% endblock %} {% block content %}
+{% extends 'admin/admin_base.html' %}
 
-<!-- TOP NAVBAR -->
-<nav class="navbar navbar-light bg-white shadow-sm py-3 mb-3">
-  <div class="container-fluid">
-    <a class="navbar-brand text-primary fw-bold fs-4">
-      <i class="fa fa-calendar-check me-2"></i>Manage Appointments
-    </a>
+{% block title %}Manage Appointments - Admin Panel{% endblock %}
 
-    <div class="ms-auto">
-      <a
-        href="{% url 'admin_dashboard' %}"
-        class="btn btn-outline-primary btn-sm rounded-pill me-2">
-        <i class="fa fa-arrow-left"></i> Back
-      </a>
-      <a href="{% url 'login' %}" class="btn btn-danger btn-sm rounded-pill">
-        <i class="fa fa-power-off"></i> Logout
-      </a>
-    </div>
-  </div>
+{% block content %}
+<nav class="navbar navbar-light bg-white shadow-sm rounded py-3 px-3 mb-4">
+  <span class="navbar-brand text-primary fw-bold fs-4"><i class="fa fa-calendar-check me-2"></i>Manage Appointments</span>
+  <div><a href="{% url 'admin_dashboard' %}" class="btn btn-outline-primary btn-sm rounded-pill me-2"><i class="fa fa-arrow-left me-1"></i>Dashboard</a><a href="{% url 'logout' %}" class="btn btn-danger btn-sm rounded-pill"><i class="fa fa-power-off me-1"></i>Logout</a></div>
 </nav>
 
-<!-- FILTER BAR -->
-<div class="card shadow-sm border-0 mb-4">
+<form method="get" class="card shadow-sm border-0 mb-4">
   <div class="card-body">
-    <div class="row g-3">
-      <div class="col-md-4">
-        <input
-          type="text"
-          name="q"
-          class="form-control rounded-pill"
-          placeholder="Search by patient, doctor, ID" />
-      </div>
-
-      <div class="col-md-3">
-        <select name="status" class="form-select rounded-pill">
-          <option value="">Filter by status</option>
-          <option value="Confirmed">Confirmed</option>
-          <option value="Pending">Pending</option>
-          <option value="Cancelled">Cancelled</option>
-        </select>
-      </div>
-
-      <div class="col-md-3">
-        <select name="department" class="form-select rounded-pill">
-          <option value="">Filter by department</option>
-          {% for dept in departments %}
-          <option value="{{ dept }}">{{ dept }}</option>
-          {% endfor %}
-        </select>
-      </div>
-
-      <div class="col-md-2">
-        <input type="date" name="date" class="form-control rounded-pill" />
-      </div>
+    <div class="row g-3 align-items-end">
+      <div class="col-md-6 col-xl-4"><label for="appointment-search" class="form-label">Search</label><input id="appointment-search" type="search" name="q" value="{{ query }}" class="form-control" placeholder="Patient, doctor or appointment ID"></div>
+      <div class="col-md-6 col-xl-2"><label for="appointment-status" class="form-label">Status</label><select id="appointment-status" name="status" class="form-select"><option value="">All statuses</option>{% for value, label in statuses %}<option value="{{ value }}" {% if selected_status == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></div>
+      <div class="col-md-6 col-xl-3"><label for="appointment-department" class="form-label">Department</label><select id="appointment-department" name="department" class="form-select"><option value="">All departments</option>{% for dept in departments %}<option value="{{ dept }}" {% if selected_department == dept %}selected{% endif %}>{{ dept }}</option>{% endfor %}</select></div>
+      <div class="col-md-6 col-xl-2"><label for="appointment-date" class="form-label">Date</label><input id="appointment-date" type="date" name="date" value="{{ selected_date }}" class="form-control"></div>
+      <div class="col-xl-1 d-flex gap-2"><button type="submit" class="btn btn-primary flex-grow-1" aria-label="Apply filters"><i class="fa fa-filter"></i></button><a href="{% url 'admin_appointments' %}" class="btn btn-outline-secondary" aria-label="Clear filters"><i class="fa fa-xmark"></i></a></div>
     </div>
   </div>
-</div>
+</form>
 
-<!-- APPOINTMENTS TABLE -->
 <div class="card shadow-sm border-0">
-  <div class="card-body">
-    <table class="table align-middle">
-      <thead class="bg-light">
-        <tr>
-          <th>Patient</th>
-          <th>Doctor</th>
-          <th>Date</th>
-          <th>Time</th>
-          <th>Status</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        {% for ap in appointments %}
-        <tr>
-          <td><strong>{{ ap.patient.user.get_full_name }}</strong></td>
-
-          <td>
-            Dr. {{ ap.doctor.user.get_full_name }} ({{ ap.doctor.department }})
-          </td>
-
-          <td>{{ ap.date|date:"d M Y" }}</td>
-          <td>{{ ap.time|time:"h:i A" }}</td>
-
-          <td>
-            {% if ap.status == "Confirmed" %}
-            <span class="badge bg-primary">Confirmed</span>
-            {% elif ap.status == "Pending" %}
-            <span class="badge bg-warning">Pending</span>
-            {% else %}
-            <span class="badge bg-danger">Cancelled</span>
-            {% endif %}
-          </td>
-
-          <td>
-            <a
-              href="{% url 'admin_edit_appointment' ap.id %}"
-              class="btn btn-outline-primary btn-sm">
-              <i class="fa fa-edit"></i>
-            </a>
-
-            <a
-              href="{% url 'admin_delete_appointment' ap.id %}"
-              class="btn btn-outline-danger btn-sm">
-              <i class="fa fa-times"></i>
-            </a>
-          </td>
-        </tr>
-
-        {% empty %}
-        <tr>
-          <td colspan="6" class="text-center text-muted">
-            No appointments found.
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+  <div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0 fw-bold">Appointments</h5><span class="text-secondary small">{{ appointments|length }} result{{ appointments|length|pluralize }}</span></div>
+  <div class="table-responsive"><table class="table align-middle mb-0">
+    <thead class="table-light"><tr><th>ID</th><th>Booking reference</th><th>Patient</th><th>Doctor</th><th>Date</th><th>Time</th><th>Status</th><th>Actions</th></tr></thead>
+    <tbody>
+      {% for ap in appointments %}<tr>
+        <td>#{{ ap.id }}</td><td><code>{{ ap.booking_reference }}</code></td><td><strong>{{ ap.patient.user.get_full_name|default:ap.patient.user.username }}</strong></td>
+        <td>Dr. {{ ap.doctor.user.get_full_name|default:ap.doctor.user.username }}<div class="small text-secondary">{{ ap.doctor.department }}</div></td>
+        <td>{{ ap.date|date:"d M Y" }}</td><td>{{ ap.time|time:"h:i A" }}</td>
+        <td><span class="badge {% if ap.status == 'Completed' %}bg-success{% elif ap.status == 'Cancelled' %}bg-secondary{% elif ap.status == 'In Process' %}bg-info text-dark{% else %}bg-warning text-dark{% endif %}">{{ ap.status }}</span></td>
+        <td class="text-nowrap"><a href="{% url 'admin_edit_appointment' ap.id %}" class="btn btn-outline-primary btn-sm" aria-label="Edit appointment {{ ap.id }}"><i class="fa fa-edit"></i></a><form method="post" action="{% url 'admin_delete_appointment' ap.id %}" class="d-inline">{% csrf_token %}<button type="submit" class="btn btn-outline-danger btn-sm ms-1" aria-label="Delete appointment {{ ap.id }}"><i class="fa fa-trash"></i></button></form></td>
+      </tr>{% empty %}<tr><td colspan="8" class="text-center text-secondary py-4">No appointments match these filters.</td></tr>{% endfor %}
+    </tbody>
+  </table></div>
 </div>
-
 {% endblock %}

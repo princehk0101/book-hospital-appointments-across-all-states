@@ -1,0 +1,2630 @@
+[
+  {
+    "name": "लखनऊ",
+    "slug": "lucknow",
+    "hospitals": [
+      {
+        "name": "किंग जॉर्ज चिकित्सा विश्वविद्यालय (केजीएमयू) अस्पताल",
+        "address": "लखनऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "King George's Medical University (KGMU) Hospital"
+      },
+      {
+        "name": "संजय गांधी स्नातकोत्तर आयुर्विज्ञान संस्थान (एसजीपीजीआईएमएस)",
+        "address": "लखनऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Urology",
+          "Gastroenterology",
+          "Endocrinology",
+          "Oncology",
+          "General Medicine",
+          "Pulmonology",
+          "General Surgery",
+          "Pediatrics",
+          "Radiology"
+        ],
+        "source_name": "Sanjay Gandhi Postgraduate Institute of Medical Sciences (SGPGIMS)"
+      },
+      {
+        "name": "डॉ. राम मनोहर लोहिया आयुर्विज्ञान संस्थान (आरएमएलआईएमएस)",
+        "address": "लखनऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Dr. Ram Manohar Lohia Institute of Medical Sciences (RMLIMS)"
+      },
+      {
+        "name": "एरा मेडिकल कॉलेज एवं अस्पताल, लखनऊ",
+        "address": "लखनऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Era's Lucknow Medical College & Hospital"
+      },
+      {
+        "name": "बलरामपुर अस्पताल",
+        "address": "लखनऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Balrampur Hospital"
+      }
+    ],
+    "source_district": "Lucknow"
+  },
+  {
+    "name": "कानपुर नगर",
+    "slug": "kanpur-nagar",
+    "hospitals": [
+      {
+        "name": "एलएलआर अस्पताल (जीएसवीएम मेडिकल कॉलेज)",
+        "address": "कानपुर नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "LLR Hospital (GSVM Medical College)"
+      },
+      {
+        "name": "रामा मेडिकल कॉलेज अस्पताल एवं अनुसंधान केंद्र",
+        "address": "कानपुर नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Rama Medical College Hospital & Research Centre"
+      },
+      {
+        "name": "रीजेंसी अस्पताल",
+        "address": "कानपुर नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Regency Hospital"
+      }
+    ],
+    "source_district": "Kanpur Nagar"
+  },
+  {
+    "name": "वाराणसी",
+    "slug": "varanasi",
+    "hospitals": [
+      {
+        "name": "सर सुंदरलाल अस्पताल (आईएमएस, बीएचयू)",
+        "address": "वाराणसी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Sir Sunderlal Hospital (IMS BHU)"
+      },
+      {
+        "name": "पं. दीन दयाल उपाध्याय जिला अस्पताल",
+        "address": "वाराणसी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Pt. Deen Dayal Upadhyay District Hospital"
+      },
+      {
+        "name": "महामना पंडित मदन मोहन मालवीय कैंसर केंद्र (एमपीएमएमसीसी)",
+        "address": "वाराणसी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "Oncology",
+          "Radiology"
+        ],
+        "source_name": "Mahamana Pandit Madan Mohan Malaviya Cancer Centre (MPMMCC)"
+      }
+    ],
+    "source_district": "Varanasi"
+  },
+  {
+    "name": "प्रयागराज",
+    "slug": "prayagraj",
+    "hospitals": [
+      {
+        "name": "स्वरूप रानी नेहरू (एसआरएन) अस्पताल (एमएलएन मेडिकल कॉलेज)",
+        "address": "प्रयागराज, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Swaroop Rani Nehru (SRN) Hospital (MLN Medical College)"
+      },
+      {
+        "name": "तेज बहादुर सप्रू (बेली) अस्पताल",
+        "address": "प्रयागराज, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Tej Bahadur Sapru (Beli) Hospital"
+      }
+    ],
+    "source_district": "Prayagraj"
+  },
+  {
+    "name": "आगरा",
+    "slug": "agra",
+    "hospitals": [
+      {
+        "name": "एस.एन. मेडिकल कॉलेज अस्पताल",
+        "address": "आगरा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "S.N. Medical College Hospital"
+      },
+      {
+        "name": "एफ.एच. मेडिकल कॉलेज एवं अस्पताल",
+        "address": "आगरा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "F.H. Medical College & Hospital"
+      }
+    ],
+    "source_district": "Agra"
+  },
+  {
+    "name": "गोरखपुर",
+    "slug": "gorakhpur",
+    "hospitals": [
+      {
+        "name": "बाबा राघव दास (बीआरडी) मेडिकल कॉलेज अस्पताल",
+        "address": "गोरखपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Baba Raghav Das (BRD) Medical College Hospital"
+      },
+      {
+        "name": "एम्स गोरखपुर",
+        "address": "गोरखपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "AIIMS Gorakhpur"
+      }
+    ],
+    "source_district": "Gorakhpur"
+  },
+  {
+    "name": "मेरठ",
+    "slug": "meerut",
+    "hospitals": [
+      {
+        "name": "एलएलआरएम मेडिकल कॉलेज अस्पताल",
+        "address": "मेरठ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "LLRM Medical College Hospital"
+      },
+      {
+        "name": "छत्रपति शिवाजी सुभारती अस्पताल",
+        "address": "मेरठ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Chhatrapati Shivaji Subharti Hospital"
+      }
+    ],
+    "source_district": "Meerut"
+  },
+  {
+    "name": "गाज़ियाबाद",
+    "slug": "ghaziabad",
+    "hospitals": [
+      {
+        "name": "संतोष मेडिकल कॉलेज एवं अस्पताल",
+        "address": "गाज़ियाबाद, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Santosh Medical College & Hospital"
+      },
+      {
+        "name": "एमएमजी जिला अस्पताल",
+        "address": "गाज़ियाबाद, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "MMG District Hospital"
+      }
+    ],
+    "source_district": "Ghaziabad"
+  },
+  {
+    "name": "गौतम बुद्ध नगर",
+    "slug": "gautam-buddha-nagar",
+    "hospitals": [
+      {
+        "name": "राजकीय आयुर्विज्ञान संस्थान (जीआईएमएस), ग्रेटर नोएडा",
+        "address": "गौतम बुद्ध नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Government Institute of Medical Sciences (GIMS), Greater Noida"
+      },
+      {
+        "name": "शारदा अस्पताल, ग्रेटर नोएडा",
+        "address": "गौतम बुद्ध नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Sharda Hospital, Greater Noida"
+      },
+      {
+        "name": "जेपी अस्पताल, नोएडा",
+        "address": "गौतम बुद्ध नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Jaypee Hospital, Noida"
+      },
+      {
+        "name": "फोर्टिस अस्पताल, नोएडा",
+        "address": "गौतम बुद्ध नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Fortis Hospital, Noida"
+      },
+      {
+        "name": "कैलाश अस्पताल, नोएडा",
+        "address": "गौतम बुद्ध नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Kailash Hospital, Noida"
+      }
+    ],
+    "source_district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "बरेली",
+    "slug": "bareilly",
+    "hospitals": [
+      {
+        "name": "रोहिलखंड मेडिकल कॉलेज एवं अस्पताल (आरएमसीएच)",
+        "address": "बरेली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Rohilkhand Medical College & Hospital (RMCH)"
+      },
+      {
+        "name": "एसआरएमएस आयुर्विज्ञान संस्थान (एसआरएमएस आईएमएस)",
+        "address": "बरेली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "SRMS Institute of Medical Sciences (SRMS IMS)"
+      }
+    ],
+    "source_district": "Bareilly"
+  },
+  {
+    "name": "अलीगढ़",
+    "slug": "aligarh",
+    "hospitals": [
+      {
+        "name": "जवाहरलाल नेहरू मेडिकल कॉलेज अस्पताल (एएमयू)",
+        "address": "अलीगढ़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Jawaharlal Nehru Medical College Hospital (AMU)"
+      },
+      {
+        "name": "मलखान सिंह जिला अस्पताल",
+        "address": "अलीगढ़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Malkhan Singh District Hospital"
+      }
+    ],
+    "source_district": "Aligarh"
+  },
+  {
+    "name": "झाँसी",
+    "slug": "jhansi",
+    "hospitals": [
+      {
+        "name": "महारानी लक्ष्मीबाई मेडिकल कॉलेज अस्पताल",
+        "address": "झाँसी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "Maharani Laxmi Bai Medical College Hospital"
+      }
+    ],
+    "source_district": "Jhansi"
+  },
+  {
+    "name": "मुरादाबाद",
+    "slug": "moradabad",
+    "hospitals": [
+      {
+        "name": "तीर्थंकर महावीर मेडिकल कॉलेज एवं अनुसंधान केंद्र अस्पताल",
+        "address": "मुरादाबाद, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Teerthanker Mahaveer Medical College & Research Centre Hospital"
+      }
+    ],
+    "source_district": "Moradabad"
+  },
+  {
+    "name": "अयोध्या",
+    "slug": "ayodhya",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, फ़ैज़ाबाद (अयोध्या)",
+        "address": "अयोध्या, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Faizabad (Ayodhya)"
+      }
+    ],
+    "source_district": "Ayodhya"
+  },
+  {
+    "name": "मथुरा",
+    "slug": "mathura",
+    "hospitals": [
+      {
+        "name": "के.डी. मेडिकल कॉलेज अस्पताल एवं अनुसंधान केंद्र",
+        "address": "मथुरा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "K.D. Medical College Hospital & Research Centre"
+      }
+    ],
+    "source_district": "Mathura"
+  },
+  {
+    "name": "सहारनपुर",
+    "slug": "saharanpur",
+    "hospitals": [
+      {
+        "name": "शैख़-उल-हिंद मौलाना महमूद हसन मेडिकल कॉलेज अस्पताल, सहारनपुर",
+        "address": "सहारनपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Shaikh-UL-Hind Maulana Mahmood Hasan Medical College Hospital, Saharanpur"
+      }
+    ],
+    "source_district": "Saharanpur"
+  },
+  {
+    "name": "इटावा",
+    "slug": "etawah",
+    "hospitals": [
+      {
+        "name": "उत्तर प्रदेश आयुर्विज्ञान विश्वविद्यालय (यूपीयूएमएस) अस्पताल, सैफ़ई",
+        "address": "इटावा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "UP University of Medical Sciences (UPUMS) Hospital, Saifai"
+      }
+    ],
+    "source_district": "Etawah"
+  },
+  {
+    "name": "बाँदा",
+    "slug": "banda",
+    "hospitals": [
+      {
+        "name": "रानी दुर्गावती मेडिकल कॉलेज अस्पताल",
+        "address": "बाँदा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Rani Durgavati Medical College Hospital"
+      }
+    ],
+    "source_district": "Banda"
+  },
+  {
+    "name": "जालौन",
+    "slug": "jalaun",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, उरई (जालौन)",
+        "address": "जालौन, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Orai (Jalaun)"
+      }
+    ],
+    "source_district": "Jalaun"
+  },
+  {
+    "name": "आजमगढ़",
+    "slug": "azamgarh",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज एवं सुपर स्पेशियलिटी अस्पताल, आजमगढ़",
+        "address": "आजमगढ़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College & Super Specialty Hospital, Azamgarh"
+      }
+    ],
+    "source_district": "Azamgarh"
+  },
+  {
+    "name": "जौनपुर",
+    "slug": "jaunpur",
+    "hospitals": [
+      {
+        "name": "उमा नाथ सिंह स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, जौनपुर",
+        "address": "जौनपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Uma Nath Singh Autonomous State Medical College Hospital, Jaunpur"
+      }
+    ],
+    "source_district": "Jaunpur"
+  },
+  {
+    "name": "कन्नौज",
+    "slug": "kannauj",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, कन्नौज",
+        "address": "कन्नौज, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Kannauj"
+      }
+    ],
+    "source_district": "Kannauj"
+  },
+  {
+    "name": "बदायूँ",
+    "slug": "budaun",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, बदायूँ",
+        "address": "बदायूँ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Badaun"
+      }
+    ],
+    "source_district": "Badaun"
+  },
+  {
+    "name": "शाहजहाँपुर",
+    "slug": "shahjahanpur",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, शाहजहाँपुर",
+        "address": "शाहजहाँपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Shahjahanpur"
+      }
+    ],
+    "source_district": "Shahjahanpur"
+  },
+  {
+    "name": "फिरोजाबाद",
+    "slug": "firozabad",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, फिरोजाबाद",
+        "address": "फिरोजाबाद, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Firozabad"
+      }
+    ],
+    "source_district": "Firozabad"
+  },
+  {
+    "name": "एटा",
+    "slug": "etah",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, एटा",
+        "address": "एटा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Etah"
+      }
+    ],
+    "source_district": "Etah"
+  },
+  {
+    "name": "बस्ती",
+    "slug": "basti",
+    "hospitals": [
+      {
+        "name": "राजकीय मेडिकल कॉलेज अस्पताल, बस्ती",
+        "address": "बस्ती, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Government Medical College Hospital, Basti"
+      }
+    ],
+    "source_district": "Basti"
+  },
+  {
+    "name": "मुज़फ्फरनगर",
+    "slug": "muzaffarnagar",
+    "hospitals": [
+      {
+        "name": "मुज़फ्फरनगर मेडिकल कॉलेज एवं अस्पताल",
+        "address": "मुज़फ्फरनगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Oncology"
+        ],
+        "source_name": "Muzaffarnagar Medical College & Hospital"
+      }
+    ],
+    "source_district": "Muzaffarnagar"
+  },
+  {
+    "name": "प्रतापगढ़",
+    "slug": "pratapgarh",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, प्रतापगढ़",
+        "address": "प्रतापगढ़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Pratapgarh"
+      }
+    ],
+    "source_district": "Pratapgarh"
+  },
+  {
+    "name": "बुलंदशहर",
+    "slug": "bulandshahr",
+    "hospitals": [
+      {
+        "name": "कल्याण सिंह राजकीय मेडिकल कॉलेज अस्पताल, बुलंदशहर",
+        "address": "बुलंदशहर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Kalyan Singh Government Medical College Hospital, Bulandshahr"
+      }
+    ],
+    "source_district": "Bulandshahr"
+  },
+  {
+    "name": "शामली",
+    "slug": "shamli",
+    "hospitals": [
+      {
+        "name": "अजय संगल आयुर्विज्ञान संस्थान एवं आयुष्मान अस्पताल, शामली",
+        "address": "शामली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Ajay Sangaal Institute of Medical Sciences & Ayushman Hospital, Shamli"
+      }
+    ],
+    "source_district": "Shamli"
+  },
+  {
+    "name": "सुल्तानपुर",
+    "slug": "sultanpur",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, सुल्तानपुर",
+        "address": "सुल्तानपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Sultanpur"
+      }
+    ],
+    "source_district": "Sultanpur"
+  },
+  {
+    "name": "कानपुर देहात",
+    "slug": "kanpur-dehat",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, अकबरपुर (कानपुर देहात)",
+        "address": "कानपुर देहात, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Akbarpur (Kanpur Dehat)"
+      }
+    ],
+    "source_district": "Kanpur Dehat"
+  },
+  {
+    "name": "कुशीनगर",
+    "slug": "kushinagar",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, कुशीनगर",
+        "address": "कुशीनगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Kushinagar"
+      }
+    ],
+    "source_district": "Kushinagar"
+  },
+  {
+    "name": "ललितपुर",
+    "slug": "lalitpur",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, ललितपुर",
+        "address": "ललितपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Lalitpur"
+      }
+    ],
+    "source_district": "Lalitpur"
+  },
+  {
+    "name": "पीलीभीत",
+    "slug": "pilibhit",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, पीलीभीत",
+        "address": "पीलीभीत, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Pilibhit"
+      }
+    ],
+    "source_district": "Pilibhit"
+  },
+  {
+    "name": "बिजनौर",
+    "slug": "bijnor",
+    "hospitals": [
+      {
+        "name": "महात्मा विदुर स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, बिजनौर",
+        "address": "बिजनौर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Mahatma Vidur Autonomous State Medical College Hospital, Bijnor"
+      }
+    ],
+    "source_district": "Bijnor"
+  },
+  {
+    "name": "कौशाम्बी",
+    "slug": "kaushambi",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज एवं अस्पताल, कौशाम्बी",
+        "address": "कौशाम्बी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College & Hospital, Kaushambi"
+      }
+    ],
+    "source_district": "Kaushambi"
+  },
+  {
+    "name": "सोनभद्र",
+    "slug": "sonbhadra",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, सोनभद्र",
+        "address": "सोनभद्र, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Sonbhadra"
+      }
+    ],
+    "source_district": "Sonbhadra"
+  },
+  {
+    "name": "रायबरेली",
+    "slug": "raebareli",
+    "hospitals": [
+      {
+        "name": "एम्स रायबरेली",
+        "address": "रायबरेली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine",
+          "Cardiology",
+          "Neurology",
+          "Nephrology",
+          "Gastroenterology",
+          "Urology",
+          "Pulmonology",
+          "Oncology"
+        ],
+        "source_name": "AIIMS Raebareli"
+      }
+    ],
+    "source_district": "Raebareli"
+  },
+  {
+    "name": "अम्बेडकर नगर",
+    "slug": "ambedkar-nagar",
+    "hospitals": [
+      {
+        "name": "महामाया राजकीय एलोपैथिक मेडिकल कॉलेज अस्पताल, अम्बेडकर नगर",
+        "address": "अम्बेडकर नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Mahamaya Rajkiya Allopathic Medical College Hospital, Ambedkar Nagar"
+      }
+    ],
+    "source_district": "Ambedkar Nagar"
+  },
+  {
+    "name": "सिद्धार्थनगर",
+    "slug": "siddharthnagar",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, सिद्धार्थनगर",
+        "address": "सिद्धार्थनगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Siddharthnagar"
+      }
+    ],
+    "source_district": "Siddharthnagar"
+  },
+  {
+    "name": "देवरिया",
+    "slug": "deoria",
+    "hospitals": [
+      {
+        "name": "महर्षि देवरहा बाबा स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, देवरिया",
+        "address": "देवरिया, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Maharshi Devraha Baba Autonomous State Medical College Hospital, Deoria"
+      }
+    ],
+    "source_district": "Deoria"
+  },
+  {
+    "name": "गाज़ीपुर",
+    "slug": "ghazipur",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, गाज़ीपुर",
+        "address": "गाज़ीपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Ghazipur"
+      }
+    ],
+    "source_district": "Ghazipur"
+  },
+  {
+    "name": "हरदोई",
+    "slug": "hardoi",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, हरदोई",
+        "address": "हरदोई, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Hardoi"
+      }
+    ],
+    "source_district": "Hardoi"
+  },
+  {
+    "name": "मीरजापुर",
+    "slug": "mirzapur",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, मीरजापुर",
+        "address": "मीरजापुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Mirzapur"
+      }
+    ],
+    "source_district": "Mirzapur"
+  },
+  {
+    "name": "फतेहपुर",
+    "slug": "fatehpur",
+    "hospitals": [
+      {
+        "name": "स्वायत्त राज्य मेडिकल कॉलेज अस्पताल, फतेहपुर",
+        "address": "फतेहपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Autonomous State Medical College Hospital, Fatehpur"
+      }
+    ],
+    "source_district": "Fatehpur"
+  },
+  {
+    "name": "बहराइच",
+    "slug": "bahraich",
+    "hospitals": [
+      {
+        "name": "राजकीय एलोपैथिक मेडिकल कॉलेज अस्पताल, बहराइच",
+        "address": "बहराइच, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "Rajkiya Allopathic Medical College Hospital, Bahraich"
+      }
+    ],
+    "source_district": "Bahraich"
+  },
+  {
+    "name": "बलिया",
+    "slug": "ballia",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, बलिया",
+        "address": "बलिया, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Ballia"
+      }
+    ],
+    "source_district": "Ballia"
+  },
+  {
+    "name": "मऊ",
+    "slug": "mau",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, मऊ",
+        "address": "मऊ, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Mau"
+      }
+    ],
+    "source_district": "Mau"
+  },
+  {
+    "name": "बाराबंकी",
+    "slug": "barabanki",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, बाराबंकी",
+        "address": "बाराबंकी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Barabanki"
+      }
+    ],
+    "source_district": "Barabanki"
+  },
+  {
+    "name": "उन्नाव",
+    "slug": "unnao",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, उन्नाव",
+        "address": "उन्नाव, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Unnao"
+      }
+    ],
+    "source_district": "Unnao"
+  },
+  {
+    "name": "सीतापुर",
+    "slug": "sitapur",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, सीतापुर",
+        "address": "सीतापुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Sitapur"
+      }
+    ],
+    "source_district": "Sitapur"
+  },
+  {
+    "name": "लखीमपुर खीरी",
+    "slug": "lakhimpur-kheri",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, लखीमपुर खीरी",
+        "address": "लखीमपुर खीरी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Lakhimpur Kheri"
+      }
+    ],
+    "source_district": "Lakhimpur Kheri"
+  },
+  {
+    "name": "गोंडा",
+    "slug": "gonda",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, गोंडा",
+        "address": "गोंडा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Gonda"
+      }
+    ],
+    "source_district": "Gonda"
+  },
+  {
+    "name": "महराजगंज",
+    "slug": "maharajganj",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, महराजगंज",
+        "address": "महराजगंज, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Maharajganj"
+      }
+    ],
+    "source_district": "Maharajganj"
+  },
+  {
+    "name": "रामपुर",
+    "slug": "rampur",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, रामपुर",
+        "address": "रामपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Rampur"
+      }
+    ],
+    "source_district": "Rampur"
+  },
+  {
+    "name": "हाथरस",
+    "slug": "hathras",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, हाथरस",
+        "address": "हाथरस, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Hathras"
+      }
+    ],
+    "source_district": "Hathras"
+  },
+  {
+    "name": "मैनपुरी",
+    "slug": "mainpuri",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, मैनपुरी",
+        "address": "मैनपुरी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Mainpuri"
+      }
+    ],
+    "source_district": "Mainpuri"
+  },
+  {
+    "name": "महोबा",
+    "slug": "mahoba",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, महोबा",
+        "address": "महोबा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Ophthalmology",
+          "Dermatology",
+          "Psychiatry",
+          "Radiology",
+          "Dentistry",
+          "Emergency Medicine"
+        ],
+        "source_name": "District Hospital, Mahoba"
+      }
+    ],
+    "source_district": "Mahoba"
+  },
+  {
+    "name": "अमेठी",
+    "slug": "amethi",
+    "hospitals": [
+      {
+        "name": "जिला चिकित्सालय, गौरीगंज",
+        "address": "अमेठी, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "अमरोहा",
+    "slug": "amroha",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, अमरोहा",
+        "address": "अमरोहा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "सरकारी अस्पताल, अमरोहा",
+        "address": "अमरोहा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "मुन्नी देवी सरकारी अस्पताल, अमरोहा",
+        "address": "अमरोहा, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "औरैया",
+    "slug": "auraiya",
+    "hospitals": [
+      {
+        "name": "सरकारी जिला अस्पताल, औरैया",
+        "address": "औरैया, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "बागपत",
+    "slug": "baghpat",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, बागपत",
+        "address": "बागपत, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "बलरामपुर",
+    "slug": "balrampur",
+    "hospitals": [
+      {
+        "name": "संयुक्त जिला चिकित्सालय, बलरामपुर",
+        "address": "बलरामपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "जिला महिला चिकित्सालय, बलरामपुर",
+        "address": "बलरामपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "भदोही",
+    "slug": "bhadohi",
+    "hospitals": [
+      {
+        "name": "महाराजा चेतसिंह जिला चिकित्सालय, ज्ञानपुर",
+        "address": "भदोही, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "महाराजा बलवंत सिंह राजकीय अस्पताल, भदोही",
+        "address": "भदोही, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "चंदौली",
+    "slug": "chandauli",
+    "hospitals": [
+      {
+        "name": "पंडित कमलापति त्रिपाठी जिला चिकित्सालय, चंदौली",
+        "address": "चंदौली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "संयुक्त जिला चिकित्सालय, चकिया",
+        "address": "चंदौली, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "चित्रकूट",
+    "slug": "chitrakoot",
+    "hospitals": [
+      {
+        "name": "जिला चिकित्सालय, चित्रकूट",
+        "address": "चित्रकूट, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "फर्रुखाबाद",
+    "slug": "farrukhabad",
+    "hospitals": [
+      {
+        "name": "डॉ. राम मनोहर लोहिया जिला चिकित्सालय, फर्रुखाबाद",
+        "address": "फर्रुखाबाद, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "हापुड़",
+    "slug": "hapur",
+    "hospitals": [
+      {
+        "name": "जिला संयुक्त चिकित्सालय, हापुड़",
+        "address": "हापुड़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "देव नंदिनी अस्पताल, हापुड़",
+        "address": "हापुड़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "श्रीमती बिरन देवी मोदी जनाना अस्पताल, हापुड़",
+        "address": "हापुड़, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "कासगंज",
+    "slug": "kasganj",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, कासगंज",
+        "address": "कासगंज, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "सम्भल",
+    "slug": "sambhal",
+    "hospitals": [
+      {
+        "name": "जिला अस्पताल, सम्भल",
+        "address": "सम्भल, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "संत कबीर नगर",
+    "slug": "sant-kabir-nagar",
+    "hospitals": [
+      {
+        "name": "संयुक्त जिला चिकित्सालय, संत कबीर नगर",
+        "address": "संत कबीर नगर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "श्रावस्ती",
+    "slug": "shravasti",
+    "hospitals": [
+      {
+        "name": "संयुक्त जिला चिकित्सालय, श्रावस्ती",
+        "address": "श्रावस्ती, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  },
+  {
+    "name": "हमीरपुर",
+    "slug": "hamirpur",
+    "hospitals": [
+      {
+        "name": "दीवान शत्रुघ्न सिंह पुरुष चिकित्सालय, हमीरपुर",
+        "address": "हमीरपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      },
+      {
+        "name": "दीवान शत्रुघ्न सिंह महिला चिकित्सालय, हमीरपुर",
+        "address": "हमीरपुर, उत्तर प्रदेश",
+        "phone": "",
+        "departments": [
+          "General Medicine",
+          "General Surgery",
+          "Orthopedics",
+          "Gynecology",
+          "Pediatrics",
+          "ENT",
+          "Emergency Medicine"
+        ],
+        "source_name": null
+      }
+    ],
+    "source_district": null
+  }
+]

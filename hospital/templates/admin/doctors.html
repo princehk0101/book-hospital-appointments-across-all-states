@@ -15,7 +15,7 @@ Doctors - Admin Panel{% endblock %} {% block content %}
         <i class="fa fa-arrow-left"></i> Back
       </a>
 
-      <a href="{% url 'login' %}" class="btn btn-danger btn-sm rounded-pill">
+      <a href="{% url 'logout' %}" class="btn btn-danger btn-sm rounded-pill">
         <i class="fa fa-power-off"></i> Logout
       </a>
     </div>
@@ -62,12 +62,9 @@ Doctors - Admin Panel{% endblock %} {% block content %}
               <i class="fa fa-edit"></i>
             </a>
 
-            <a
-              href="{% url 'admin_doctors_delete' doc.id %}"
-              onclick="return confirm('Are you sure you want to delete this doctor?');"
-              class="btn btn-sm btn-outline-danger rounded-pill">
-              <i class="fa fa-trash"></i>
-            </a>
+            <form method="post" action="{% url 'admin_doctors_delete' doc.id %}" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this doctor?');">{% csrf_token %}
+              <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill"><i class="fa fa-trash"></i></button>
+            </form>
           </td>
         </tr>
 

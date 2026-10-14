@@ -14,11 +14,18 @@
     <div class="card shadow-sm border-0 p-4">
         <div class="text-center">
 
-            <img src="https://cdn-icons-png.flaticon.com/512/3304/3304567.png"
-                 width="120" class="rounded-circle mb-3">
+            {% if doctor.profile_photo %}
+                <img src="{{ doctor.profile_photo.url }}" alt="Dr. {{ doctor.user.get_full_name }} profile photo"
+                     width="120" height="120" class="rounded-circle mb-3" style="object-fit:cover">
+            {% else %}
+                <div class="rounded-circle bg-primary-subtle text-primary d-inline-flex align-items-center justify-content-center mb-3" style="width:120px;height:120px;font-size:3rem" aria-label="Doctor profile photo placeholder">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+            {% endif %}
 
             <h3 class="fw-bold">Dr. {{ doctor.user.get_full_name }}</h3>
             <p class="text-muted">{{ doctor.specialization }}</p>
+            <a class="btn btn-outline-primary btn-sm rounded-pill" href="{% url 'doctor_profile_edit' %}"><i class="fa-solid fa-camera me-1"></i>{% if doctor.profile_photo %}Change photo{% else %}Upload photo{% endif %}</a>
         </div>
 
         <hr>
@@ -29,10 +36,13 @@
                 <p><strong>Department:</strong> {{ doctor.department }}</p>
                 <p><strong>Experience:</strong> {{ doctor.experience }} years</p>
                 <p><strong>Languages:</strong> {{ doctor.language }}</p>
+                <p><strong>Email:</strong> {{ doctor.user.email }}</p>
+                <p><strong>Phone:</strong> {{ doctor.user.account.phone }}</p>
             </div>
 
             <div class="col-md-6">
-                <p><strong>Location:</strong> {{ doctor.location }}</p>
+                <p><strong>Hospital:</strong> {{ doctor.hospital.name|default:"Not assigned" }}</p>
+                <p><strong>Address:</strong> {{ doctor.hospital.address|default:doctor.location }}</p>
                 <p><strong>Username:</strong> {{ doctor.user.username }}</p>
             </div>
 

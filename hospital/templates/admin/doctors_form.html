@@ -18,7 +18,7 @@
                 <i class="fa fa-arrow-left"></i> Back
             </a>
 
-            <a href="{% url 'login' %}" class="btn btn-danger btn-sm rounded-pill">
+            <a href="{% url 'logout' %}" class="btn btn-danger btn-sm rounded-pill">
                 <i class="fa fa-power-off"></i> Logout
             </a>
         </div>
@@ -65,12 +65,13 @@
             <div class="col-md-6">
                 <label class="form-label fw-semibold">Department</label>
                 <select class="form-select" name="department" required>
-                    <option>Cardiology</option>
-                    <option>Neurology</option>
-                    <option>Pediatrics</option>
-                    <option>Orthopedics</option>
-                    <option>Dermatology</option>
+                    {% for value, label in departments %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
                 </select>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Hospital</label>
+                <select class="form-select" name="hospital"><option value="">Unassigned (can assign later)</option>{% for hospital in hospitals %}<option value="{{ hospital.id }}">{{ hospital.name }} — {{ hospital.district.name }}</option>{% endfor %}</select>
             </div>
 
             <!-- EXPERIENCE -->

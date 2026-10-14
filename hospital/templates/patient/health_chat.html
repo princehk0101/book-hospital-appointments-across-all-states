@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Health Chat | MeCare{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/health_chat.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="health-chat-page">
+  <div class="hc-shell">
+    <div class="hc-breadcrumb"><a href="{% url 'home' %}">Home</a><i class="fa-solid fa-chevron-right"></i><span>Health Chat</span></div>
+
+    <section class="hc-hero">
+      <div class="hc-hero-copy">
+        <div class="hc-eyebrow"><span class="hc-eyebrow-icon"><i class="fa-solid fa-sparkles"></i></span> MECARE HEALTH ASSISTANT</div>
+        <h1>Health questions,<br><span>made easier.</span></h1>
+        <p>Ask in Hindi or English. Get simple general health information and guidance around our hospital departments.</p>
+        <div class="hc-hero-tags">
+          <span><i class="fa-solid fa-language"></i> Hindi aur English</span>
+          <span><i class="fa-solid fa-shield-heart"></i> Private chat</span>
+          <span><i class="fa-regular fa-clock"></i> Available anytime</span>
+        </div>
+      </div>
+      <div class="hc-hero-art" aria-hidden="true">
+        <div class="hc-orbit hc-orbit-one"></div><div class="hc-orbit hc-orbit-two"></div>
+        <div class="hc-hero-cross"><i class="fa-solid fa-heart-pulse"></i></div>
+        <span class="hc-float hc-float-one"><i class="fa-solid fa-comment-medical"></i></span>
+        <span class="hc-float hc-float-two"><i class="fa-solid fa-plus"></i></span>
+        <span class="hc-float hc-float-three"><i class="fa-solid fa-heart"></i></span>
+      </div>
+    </section>
+
+    <div class="hc-workspace">
+      <section class="hc-chat-card" aria-label="Chat with MeCare Health Assistant">
+        <header class="hc-chat-header">
+          <div class="hc-assistant-avatar"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="hc-assistant-details"><h2>MeCare Health Assistant</h2><span><i class="hc-online-dot"></i> Hindi &amp; English</span></div>
+          <span class="hc-chat-label"><i class="fa-solid fa-wand-magic-sparkles"></i> AI assistant</span>
+        </header>
+
+        <div id="chat-messages" class="hc-messages" aria-live="polite" aria-relevant="additions text"></div>
+
+        <div class="hc-composer-wrap">
+          <div class="hc-safety-note"><i class="fa-solid fa-triangle-exclamation"></i><span>General information only. This assistant cannot diagnose or prescribe. For an emergency, seek urgent medical care.</span></div>
+          <form id="chat-form" class="hc-composer" data-endpoint="{% url 'health_chat' %}" autocomplete="off">
+            {% csrf_token %}
+            <label for="chat-input" class="visually-hidden">Your health question</label>
+            <textarea id="chat-input" rows="1" maxlength="1200" placeholder="Apna sawaal likhein... / Type your question..." required></textarea>
+            <button id="chat-send" type="submit" aria-label="Send message" disabled><i class="fa-solid fa-arrow-up"></i></button>
+          </form>
+          <div class="hc-composer-meta"><span>Enter to send <span class="hc-meta-divider">|</span> Shift + Enter for a new line</span><span id="chat-counter">0 / 1200</span></div>
+          <p class="hc-privacy"><i class="fa-solid fa-lock"></i> Please don't share personal details. Messages aren't saved to your medical record.</p>
+        </div>
+      </section>
+
+      <aside class="hc-sidebar">
+        <section class="hc-side-card hc-topics-card">
+          <div class="hc-side-heading"><span class="hc-side-icon hc-icon-blue"><i class="fa-regular fa-lightbulb"></i></span><div><h2>Start with a question</h2><p>Tap a suggestion to add it to the chat.</p></div></div>
+          <div class="hc-prompts">
+            <button type="button" class="hc-prompt" data-prompt="What department should I contact for skin concerns?"><span class="hc-prompt-icon hc-icon-lilac"><i class="fa-solid fa-hand-dots"></i></span><span>Find a department<small>Which doctor or department?</small></span><i class="fa-solid fa-arrow-up-right-from-square hc-prompt-arrow"></i></button>
+            <button type="button" class="hc-prompt" data-prompt="What general information can you share about a fever?"><span class="hc-prompt-icon hc-icon-peach"><i class="fa-solid fa-temperature-half"></i></span><span>Ask about a symptom<small>General health information</small></span><i class="fa-solid fa-arrow-up-right-from-square hc-prompt-arrow"></i></button>
+            <button type="button" class="hc-prompt" data-prompt="How can I book an appointment at MeCare?"><span class="hc-prompt-icon hc-icon-mint"><i class="fa-regular fa-calendar-check"></i></span><span>Book an appointment<small>Learn how to get started</small></span><i class="fa-solid fa-arrow-up-right-from-square hc-prompt-arrow"></i></button>
+            <button type="button" class="hc-prompt" data-prompt="When should someone seek urgent medical care?"><span class="hc-prompt-icon hc-icon-gold"><i class="fa-solid fa-kit-medical"></i></span><span>When to seek care<small>Know when to contact a doctor</small></span><i class="fa-solid fa-arrow-up-right-from-square hc-prompt-arrow"></i></button>
+          </div>
+        </section>
+
+        <section class="hc-emergency-card">
+          <span class="hc-emergency-icon"><i class="fa-solid fa-phone-volume"></i></span>
+          <div><h2>Need urgent help?</h2><p>Don't wait for a chat reply. Contact your local emergency service or go to the nearest emergency department.</p></div>
+        </section>
+
+        <div class="hc-trust-note"><i class="fa-solid fa-circle-info"></i><p>MeCare's assistant shares general information. A qualified healthcare professional can advise you about your personal health.</p></div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{% static 'js/health_chat.js' %}" defer></script>
+{% endblock %}

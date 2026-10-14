@@ -3,15 +3,13 @@
 
 {% block title %}Doctor Appointments - MeCare HMS{% endblock %}
 
-{% block page_heading %}
-<i class="fa fa-calendar-check me-2"></i>Today's Appointments
-{% endblock %}
+{% block page_heading %}<i class="fa fa-calendar-check me-2"></i>Upcoming Appointments{% endblock %}
 
 {% block content %}
 
 <div class="card shadow-sm border-0 mb-4">
     <div class="card-header bg-white">
-        <h5 class="fw-bold">Today's Appointments</h5>
+        <h5 class="fw-bold">Upcoming appointments at your hospital</h5>
     </div>
 
     <div class="card-body">
@@ -22,7 +20,9 @@
                 <tr>
                     <th>Patient</th>
                     <th>Age</th>
+                    <th>Date</th>
                     <th>Time</th>
+                    <th>Booking reference</th>
                     <th>Status</th>
                     <th>Treatment</th>
                 </tr>
@@ -33,7 +33,9 @@
                 <tr>
                     <td><strong>{{ appt.patient.user.get_full_name }}</strong></td>
                     <td>{{ appt.patient.age }}</td>
+                    <td>{{ appt.date|date:"d M Y" }}</td>
                     <td>{{ appt.time|time:"h:i A" }}</td>
+                    <td><code>{{ appt.booking_reference }}</code></td>
 
                     <td>
                         {% if appt.status == "Waiting" %}
@@ -62,7 +64,7 @@
         </table>
 
         {% else %}
-        <p class="text-muted text-center">No appointments today.</p>
+        <p class="text-muted text-center">No paid upcoming appointments.</p>
         {% endif %}
 
     </div>

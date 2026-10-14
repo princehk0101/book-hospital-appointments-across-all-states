@@ -27,7 +27,7 @@
                 {% endif %}
 
                 <!-- REAL DJANGO FORM -->
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
 
                     <!-- Full Name -->
@@ -48,7 +48,42 @@
                     <div class="mb-3">
                         <label class="fw-semibold">Phone Number</label>
                         <input type="text" name="phone" class="form-control"
-                               placeholder="Enter phone number">
+                               placeholder="Enter phone number" required>
+                    </div>
+
+                    <div id="patientProfileFields" class="border rounded p-3 mb-3" hidden>
+                        <h6 class="fw-semibold">Patient profile</h6>
+                        <div class="mb-2"><label class="form-label">Age</label><input type="number" name="age" min="0" max="120" class="form-control"></div>
+                        <div class="mb-2"><label class="form-label">Gender</label><select name="gender" class="form-select"><option value="">Select gender</option><option>Female</option><option>Male</option><option>Other</option></select></div>
+                        <div><label class="form-label">Address</label><textarea name="address" class="form-control" rows="2"></textarea></div>
+                    </div>
+
+                    <div id="doctorProfileFields" class="border rounded p-3 mb-3" hidden>
+                        <h6 class="fw-semibold">Doctor profile</h6>
+                        <div class="mb-2">
+                            <label class="form-label" for="doctorPhoto"><i class="fa-solid fa-camera me-1"></i>Profile photo (optional)</label>
+                            <input id="doctorPhoto" type="file" name="profile_photo" class="form-control" accept="image/jpeg,image/png,image/webp">
+                            <small class="text-muted">JPG, PNG, or WebP, up to 5 MB.</small>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label" for="hospitalSelect">Hospital</label>
+                            <select class="form-select" id="hospitalSelect" name="hospital">
+                                <option value="">Select your hospital</option>
+                                {% for hospital in hospitals %}
+                                <option value="{{ hospital.id }}">{{ hospital.name }} — {{ hospital.district.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label" for="departmentSelect">Department</label>
+                            <select class="form-select" id="departmentSelect" name="department">
+                                <option value="">Choose department</option>
+                                {% for value, label in departments %}<option value="{{ value }}">{{ label }}</option>{% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-2"><label class="form-label" for="specializationInput">Specialization</label><input id="specializationInput" type="text" name="specialization" class="form-control" placeholder="e.g. General Physician"></div>
+                        <div class="mb-2"><label class="form-label" for="experienceInput">Experience (years)</label><input id="experienceInput" type="number" name="experience" min="0" max="80" class="form-control" placeholder="Years"></div>
+                        <div><label class="form-label" for="languageInput">Languages spoken</label><input id="languageInput" type="text" name="language" class="form-control" placeholder="e.g. Hindi, English"></div>
                     </div>
 
                     <!-- Password -->
@@ -61,10 +96,10 @@
                     <!-- Role Selection -->
                     <div class="mb-3">
                         <label class="fw-semibold">Register As</label>
-                        <select name="role" class="form-select" required>
+                        <select name="role" id="roleSelect" class="form-select" required>
                             <option value="">Select Role</option>
-                            <option value="patient">Patient</option>
-                            <option value="doctor">Doctor</option>
+                            <option value="patient" {% if selected_role == 'patient' %}selected{% endif %}>Patient</option>
+                            <option value="doctor" {% if selected_role == 'doctor' %}selected{% endif %}>Doctor</option>
                         </select>
                     </div>
 
@@ -86,4 +121,24 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const role = document.getElementById('roleSelect');
+    const patientBox = document.getElementById('patientProfileFields');
+    const doctorBox = document.getElementById('doctorProfileFields');
+    function sync() {
+        const patient = role.value === 'patient';
+        const doctor = role.value === 'doctor';
+        patientBox.hidden = !patient;
+        doctorBox.hidden = !doctor;
+        patientBox.querySelectorAll('input, select, textarea').forEach(field => field.required = patient);
+        doctorBox.querySelectorAll('input, select, textarea').forEach(field => field.required = doctor);
+    }
+    role.addEventListener('change', sync);
+    sync();
+});
+</script>
 {% endblock %}

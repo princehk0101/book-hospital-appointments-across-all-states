@@ -34,12 +34,13 @@
             <div class="col-md-6">
                 <label class="fw-semibold">Department</label>
                 <select class="form-select" name="department" required>
-                    <option value="Cardiology" {% if doctor.department == "Cardiology" %}selected{% endif %}>Cardiology</option>
-                    <option value="Neurology" {% if doctor.department == "Neurology" %}selected{% endif %}>Neurology</option>
-                    <option value="Orthopedics" {% if doctor.department == "Orthopedics" %}selected{% endif %}>Orthopedics</option>
-                    <option value="Pediatrics" {% if doctor.department == "Pediatrics" %}selected{% endif %}>Pediatrics</option>
-                    <option value="Dermatology" {% if doctor.department == "Dermatology" %}selected{% endif %}>Dermatology</option>
+                    {% for value, label in departments %}<option value="{{ value }}" {% if doctor.department == value %}selected{% endif %}>{{ label }}</option>{% endfor %}
                 </select>
+            </div>
+
+            <div class="col-md-6">
+                <label class="fw-semibold">Hospital</label>
+                <select class="form-select" name="hospital"><option value="">Unassigned</option>{% for hospital in hospitals %}<option value="{{ hospital.id }}" {% if doctor.hospital_id == hospital.id %}selected{% endif %}>{{ hospital.name }} — {{ hospital.district.name }}</option>{% endfor %}</select>
             </div>
 
             <div class="col-md-6">
