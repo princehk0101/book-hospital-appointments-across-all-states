@@ -1,130 +1,163 @@
-# MeCare Hospital Management System
+# 🏥 MeCare HMS
 
-MeCare HMS is a Django web application for organizing the day-to-day workflows of a small hospital. It brings patient registration, appointment scheduling, doctor worklists, treatment records, and administrative management into one role-based portal.
+**MeCare** is a multi-hospital appointment booking platform built with Django. Patients can find a hospital and department, choose a doctor and appointment time, and keep their booking and treatment history in one place. The system also provides separate patient, doctor, and administrator dashboards, downloadable appointment slips, optional Razorpay test payments, and a Hindi/English health information chatbot.
 
 **Live demo:** [django-hospital-management-system.onrender.com](https://django-hospital-management-system.onrender.com)
 
-> **Demo notice:** Seeded hospital records and doctor profiles are fictional sample data. This project is for learning and demonstration; it is not a verified provider directory or a clinical system for real patient care.
+> ⚠️ **Health information disclaimer:** The chatbot provides general information only. It cannot diagnose conditions, prescribe treatment, or replace a qualified healthcare professional. Do not share personal or sensitive medical details in the chat. Chat messages are sent to Google Gemini when AI replies are enabled. For an emergency, contact local emergency services or go to the nearest emergency department.
 
-## What this project helps solve
+> **Sample data notice:** Seeded hospitals and doctor profiles are fictional demo records. Verify hospital and provider information before using this system for real appointments.
 
-Hospitals often manage appointments and patient information across separate records and manual processes. MeCare HMS provides a shared application where:
+---
 
-- Patients can find a hospital and department, request an appointment, and keep their booking details together.
-- Doctors can review their appointments and related patient history, record treatment notes, and manage availability.
-- Administrators can maintain doctor, patient, and appointment records from one dashboard.
+## ✨ Features
 
-The application supports a district and hospital directory, 20 departments with English and Hindi labels, appointment PDFs, optional test-mode payments, and an optional Hindi/English health chat.
+### Patient
 
-## Features
-
-### Patient portal
-
-- Register and manage a patient profile.
+- Register and maintain a profile with contact and demographic details.
 - Browse doctors and view doctor profiles.
-- Book an appointment by district, hospital, department, doctor, date, and time.
-- Add symptoms to a booking, review appointment history, and cancel eligible appointments.
-- Download an appointment slip as a PDF.
-- Use the Hindi/English health chat. AI-generated replies require a Gemini API key.
+- Book appointments through **District → Hospital → Department → Doctor → Date & Time**.
+- Add symptoms, review appointment history, and cancel eligible bookings.
+- View treatment history and download appointment slips as PDFs.
+- Ask general health questions in Hindi or English through the optional AI chat.
 
-### Doctor portal
+### Doctor
 
-- View assigned appointments and patient history.
+- View today's appointments and assigned patient appointments.
+- Review patient treatment history.
 - Record diagnoses, prescriptions, and treatment notes.
-- Manage availability and update a doctor profile.
+- Manage availability and update profile details.
 
-### Admin portal
+### Administrator
 
-- View dashboard summaries and search records.
+- See dashboard totals and appointment statuses.
 - Add, edit, and remove doctor and patient records.
 - Review and manage appointments.
-- Use the custom dashboard at `/hospital/admin/dashboard/`.
+- Search across records.
 
-### Appointment and payment workflow
+### Appointment and payment flow
 
-- Appointments are scheduled for tomorrow or a later date.
-- A doctor cannot have two active appointments in the same time slot.
-- If `APPOINTMENT_FEE` is blank, booking does not require payment.
-- If a positive fee is configured, checkout uses Razorpay test keys and verifies the payment on the server before confirming the appointment.
-- Successful appointments can be downloaded as a PDF slip.
+- The booking form filters hospitals, departments, and doctors based on the selected location.
+- Appointments can be booked for tomorrow or a later date.
+- A doctor cannot have two active bookings for the same date and time.
+- Payment is optional. If `APPOINTMENT_FEE` is blank, the appointment is booked without a payment step.
+- If a fee is configured, Razorpay test checkout is used. The server verifies the payment before confirming the appointment.
+- A PDF appointment slip is available after booking confirmation.
 
-The payment integration in this repository only accepts Razorpay test keys (`rzp_test_...`). It is not configured for live payments.
+### AI health information chat
 
-## Technology
+- Accepts Hindi (including Romanized Hindi) and English.
+- Uses Google Gemini when `GEMINI_API_KEY` is configured.
+- Limits each session to 15 messages per minute.
+- Chat content is not saved to the application's database. When Gemini is enabled, messages are sent to Google to generate a reply.
 
-- Python and Django
-- Django REST Framework
-- SQLite for local development; PostgreSQL through `DATABASE_URL` for hosting
-- WhiteNoise and Gunicorn for static files and application serving
-- Razorpay test checkout and optional Gemini-powered chat
+---
 
-## Getting started
+## 🧰 Tech stack
+
+| Layer | Technology |
+| --- | --- |
+| Backend | Python, Django |
+| API | Django REST Framework |
+| Frontend | Django templates, Bootstrap 5, JavaScript, Font Awesome |
+| Local database | SQLite |
+| Hosted database | PostgreSQL through `DATABASE_URL` |
+| Static files and server | WhiteNoise, Gunicorn |
+| Payments | Razorpay test mode |
+| Health chat | Google Gemini API (optional) |
+
+---
+
+## 🚀 Getting started
 
 ### Requirements
 
 - Python 3.10 or newer
 - PowerShell on Windows, or a terminal on macOS/Linux
 
-### Install dependencies
+### 1. Clone the repository
 
-From the repository root:
+```bash
+git clone https://github.com/princehk0101/django-hospital-management-system.git
+cd django-hospital-management-system
+```
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+### 2. Create a virtual environment and install dependencies
+
+```bash
+python -m venv venv
+
+# Windows PowerShell
+.\venv\Scripts\Activate.ps1
+
+# macOS / Linux
+source venv/bin/activate
+
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-On macOS/Linux, activate the virtual environment with `source .venv/bin/activate`.
+### 3. Configure environment variables
 
-### Configure local environment
+Create a `.env` file in the repository root (on Windows, run `notepad .env`). Generate a Django secret key with:
 
-Create a `.env` file in the repository root (on Windows, run `notepad .env`). Generate a Django secret with:
-
-```powershell
+```bash
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
-Add the generated value and your chosen admin credentials to `.env`:
+Add the generated key and admin credentials to `.env`:
 
 ```dotenv
-SECRET_KEY=<generated-secret>
+SECRET_KEY=<generated-secret-key>
 DJANGO_DEBUG=True
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=<unique-password-at-least-16-characters>
 ADMIN_EMAIL=admin@localhost
 ```
 
-Keep `.env` private. It is ignored by Git. Do not put secrets in source code or commit them to the repository.
+Keep `.env` private. It is ignored by Git and must never be committed. For Render, configure these values in the service's Environment settings; the `.env` file on your computer is not uploaded to Render.
 
-### Initialize the database and start the app
+### 4. Create the database tables and admin account
 
-```powershell
+```bash
 python manage.py migrate
 python manage.py sync_env_admin
+```
+
+`sync_env_admin` creates or updates the admin account using the `ADMIN_*` values. The password must be at least 16 characters. The same account can access the custom dashboard at `/hospital/admin/dashboard/` and Django admin at `/admin/`.
+
+### 5. Load sample hospitals and doctors (optional)
+
+The repository includes a sample Uttar Pradesh hospital directory and fictional doctors. To load it into your local database, run:
+
+```bash
+python manage.py seed_up_hospitals --file ./up_hospitals_wise_name.json
+```
+
+The command can be safely rerun. Skip it if you do not want demo records.
+
+### 6. Start the development server
+
+```bash
 python manage.py runserver
 ```
 
-Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser. Sign in at `/login/`. The custom admin dashboard is at `/hospital/admin/dashboard/`; Django's built-in admin is at `/admin/`.
+Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
-`sync_env_admin` creates or updates a Django superuser using `ADMIN_USERNAME`, `ADMIN_PASSWORD`, and `ADMIN_EMAIL`. The password must contain at least 16 characters. Run the command again after changing the admin credentials.
+---
 
-## Load sample hospitals and doctors
+## 🔄 Booking flow
 
-The repository includes a sample directory for Uttar Pradesh and a seed command that creates sample hospitals and fictional doctor profiles across the configured departments. Run this only if you want demo records in the database:
+1. A patient registers and signs in.
+2. The patient selects a district, hospital, department, and doctor.
+3. The patient chooses a date and time and can add symptoms.
+4. If payment is disabled, the appointment is confirmed without checkout. If a fee is configured, the patient completes Razorpay test checkout.
+5. The server verifies a test payment before marking the appointment as paid and confirmed.
+6. The patient can view the appointment and download its PDF slip.
 
-```powershell
-python manage.py seed_up_hospitals --file .\up_hospitals_wise_name.json
-```
+## 💳 Optional Razorpay test checkout
 
-The command can be rerun safely. Do not present the generated sample profiles as real doctors or use them to book real care.
-
-## Optional integrations
-
-### Razorpay test checkout
-
-Payment is disabled when `APPOINTMENT_FEE` is blank. To enable a test checkout, add your Razorpay test credentials to `.env`:
+Payments are disabled when `APPOINTMENT_FEE` is blank. To enable test checkout, add your Razorpay **test** credentials to `.env`:
 
 ```dotenv
 APPOINTMENT_FEE=50
@@ -132,70 +165,105 @@ RAZORPAY_KEY_ID=rzp_test_<your-test-key-id>
 RAZORPAY_KEY_SECRET=<your-test-key-secret>
 ```
 
-Restart the development server after changing environment variables. Use Razorpay's test payment flow; do not scan a test QR code with a real UPI app. See [Razorpay test mode documentation](https://razorpay.com/docs/payments/payment-gateway/ecommerce-plugins/gravity-forms/integration-steps//?preferred-country=IN).
+Restart the server after changing `.env`. The app rejects live Razorpay keys; this repository is not configured to accept live payments. Use Razorpay's test flow, and do not scan a test QR code with a real UPI app. See [Razorpay test payment documentation](https://razorpay.com/docs/payments/payment-gateway/ecommerce-plugins/gravity-forms/integration-steps//?preferred-country=IN).
 
-### Hindi/English health chat
+## 🤖 Optional Hindi/English health chat
 
-Add `GEMINI_API_KEY` to `.env` to enable AI-generated replies. The app defaults to the configured Gemini model in `hospital/views.py`; `GEMINI_MODEL` can override it. Without a key, the chat page remains available but cannot generate AI responses.
+Add a Gemini API key to `.env` to enable AI-generated replies:
 
-## Useful routes
+```dotenv
+GEMINI_API_KEY=<your-gemini-api-key>
+```
 
-| Page or endpoint | Path |
+The model can be overridden with `GEMINI_MODEL`; otherwise, the application uses its configured default. Chat content is sent to Google Gemini to generate answers and is not saved to the application's database. Do not share personally identifying or sensitive health information in the chat.
+
+---
+
+## 🗂️ Project structure
+
+```text
+Hospital_Management_System/   Django project settings and URL configuration
+accounts/                     Authentication, profiles, and public pages
+hospital/                     Hospital workflows, models, views, and APIs
+  data/                       Hindi hospital seed data
+  management/commands/        Admin sync and sample data commands
+  migrations/                 Database schema migrations
+  templates/                  Patient, doctor, and admin pages
+static/                       CSS and JavaScript assets
+up_hospitals_wise_name.json   Hospital seed source data
+build.sh                      Render build script
+start.sh                      Gunicorn start script
+manage.py                     Django management entry point
+```
+
+## 🔗 Useful routes
+
+| Page | Path |
 | --- | --- |
 | Home | `/` |
-| Login and registration | `/login/`, `/register/` |
+| Login / registration | `/login/` · `/register/` |
 | Patient dashboard | `/hospital/patient/dashboard/` |
-| Book an appointment | `/hospital/patient/book-appointment/` |
-| Patient appointments | `/hospital/patient/appointments/` |
+| Book appointment | `/hospital/patient/book-appointment/` |
 | Doctor dashboard | `/hospital/doctor/dashboard/` |
 | Admin dashboard | `/hospital/admin/dashboard/` |
 | Django admin | `/admin/` |
-| Doctor API | `/hospital/api/doctors/` |
 | Health chat | `/health-chat/` |
+| Doctor API | `/hospital/api/doctors/` |
 
-## Deploy on Render
+---
 
-The project supports Render PostgreSQL through `DATABASE_URL`. Use a persistent PostgreSQL database for hosted data; files stored on a web service's local filesystem may not survive a redeploy. The local `.env` file is not uploaded to Render: configure environment variables in the Render service settings.
+## ☁️ Deploy on Render
 
-1. Push the repository to GitHub and create a Render PostgreSQL database and a Web Service connected to the repository.
-2. Set the Render build command to `bash build.sh`.
-3. Set the start command to:
+The application reads a PostgreSQL connection string from `DATABASE_URL`. Use a persistent PostgreSQL database for hosted data; the local `.env` file is not available to the Render service.
+
+1. Connect this GitHub repository to a Render Web Service and create or select a PostgreSQL database.
+2. Set the **Build Command** to `bash build.sh`.
+3. Set the **Start Command** to:
 
    ```bash
    gunicorn Hospital_Management_System.wsgi:application --bind 0.0.0.0:$PORT
    ```
 
-4. Configure these environment variables in the Render dashboard. Use Render's **Generate** option for `SECRET_KEY` and connect the web service to the database's internal URL as `DATABASE_URL`.
+4. Add these environment variables in Render. Use Render's **Generate** option for `SECRET_KEY` and set `DATABASE_URL` to the database's internal URL.
 
    ```text
-   SECRET_KEY=<generated-secret>
+   SECRET_KEY=<generated-secret-key>
    DJANGO_DEBUG=False
-   DATABASE_URL=<Render PostgreSQL internal database URL>
+   DATABASE_URL=<Render PostgreSQL internal URL>
    ADMIN_USERNAME=<admin-username>
    ADMIN_PASSWORD=<unique-password-at-least-16-characters>
    ADMIN_EMAIL=<admin-email>
    ```
 
-   Add `APPOINTMENT_FEE`, `RAZORPAY_KEY_ID`, and `RAZORPAY_KEY_SECRET` only when test checkout is needed. Add `GEMINI_API_KEY` only when enabling the AI chat.
-5. After the first successful deploy, use the service Shell to initialize the admin and, optionally, sample directory data:
+   Add `APPOINTMENT_FEE`, Razorpay test keys, or `GEMINI_API_KEY` only if you need those integrations.
+5. After deployment, open the Render Shell and run:
 
    ```bash
    python manage.py sync_env_admin
    python manage.py seed_up_hospitals --file ./up_hospitals_wise_name.json
    ```
 
-   Skip the seed command if you do not want fictional demo records. If using a custom domain, add its hostname to the `ALLOWED_HOSTS` environment variable as a comma-separated list.
+   The seed command is optional and creates fictional demo records. For a custom domain, set its hostname in `ALLOWED_HOSTS` as a comma-separated value.
 
-## Project commands
+---
 
-```powershell
-python manage.py check
-python manage.py migrate
-python manage.py sync_env_admin
-python manage.py seed_up_hospitals --file .\up_hospitals_wise_name.json
-python manage.py runserver
-```
+## 🛠️ Troubleshooting
 
-## Data and production note
+| Problem | What to check |
+| --- | --- |
+| Admin setup fails | Ensure `ADMIN_USERNAME` and `ADMIN_PASSWORD` are set; password must be at least 16 characters. |
+| Chat says the Gemini key is missing | Set `GEMINI_API_KEY` locally or in the Render Environment settings, then restart/redeploy. |
+| Chat returns a rate limit response | The session has reached 15 messages in one minute; wait and try again. |
+| Payment cannot start | Check that `APPOINTMENT_FEE` is positive and both Razorpay test credentials are set. |
+| Payment is no longer pending | Start a new appointment checkout; failed or closed attempts cannot be resumed. |
+| Static files are missing on Render | Confirm the build ran `collectstatic` and inspect the deploy logs. |
+| Database is empty after deploy | Verify that `DATABASE_URL` points to the intended persistent database. |
 
-This application handles patient-related information. Use fictional data while evaluating it. Before using it with real patients, arrange appropriate security, access controls, backups, privacy practices, and operational review for your organization. The included demo doctor records are not verified medical providers.
+## 🔒 Security and data notes
+
+- Keep `.env`, database URLs, passwords, and API keys out of Git.
+- State-changing actions use authenticated views and CSRF protection.
+- Razorpay payment status is verified server-side; only test keys are accepted.
+- The chatbot is rate limited, but its prompts are sent to Google when Gemini is enabled.
+- Use fictional records while evaluating the application. Before using real patient information, arrange suitable privacy, access control, backup, and security practices.
+- Seeded doctor profiles are fictional and are not verified medical providers.
