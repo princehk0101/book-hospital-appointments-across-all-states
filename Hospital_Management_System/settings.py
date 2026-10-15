@@ -17,7 +17,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = os.getenv("DJANGO_DEBUG", os.getenv("DEBUG", "False")).lower() in {"1", "true", "yes", "on"}
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".onrender.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "testserver", ".onrender.com"]
 ALLOWED_HOSTS.extend(
     host.strip()
     for host in os.getenv("ALLOWED_HOSTS", "").split(",")
@@ -164,6 +164,10 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Required for Render HTTPS
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Cross-Origin Policies for payment gateways (allows Razorpay netbanking/bank auth popups)
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
+SECURE_REFERRER_POLICY = 'strict-origin-when-cross-origin'
 
 
 # Default primary key field type

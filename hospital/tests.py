@@ -7,7 +7,7 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 
-from .models import Appointment, District, Doctor, Hospital, Patient
+from .models import Appointment, District, Doctor, Hospital, Patient, DEPARTMENT_CHOICES
 
 
 class AppointmentBookingTests(TestCase):
@@ -63,7 +63,7 @@ class AppointmentBookingTests(TestCase):
         hospitals = self.client.get(reverse("api_hospitals"), {"district": self.district.pk}).json()["results"]
         self.assertEqual({item["id"] for item in hospitals}, {self.hospital.pk, self.other_hospital.pk})
         departments = self.client.get(reverse("api_departments"), {"hospital": self.hospital.pk}).json()["results"]
-        self.assertEqual(departments, [{"id": "Cardiology", "name": "Cardiology"}])
+        self.assertEqual(departments, [{"id": "Cardiology", "name": dict(DEPARTMENT_CHOICES).get("Cardiology", "Cardiology")}])
         doctors = self.client.get(reverse("api_hospital_doctors"), {
             "hospital": self.hospital.pk, "department": "Cardiology",
         }).json()["results"]
@@ -77,4 +77,21 @@ class AppointmentBookingTests(TestCase):
 
         Appointment.objects.filter(doctor=self.doctor, date=day).update(status="Cancelled")
         self.make_appointment(day).save()
+
+    def test_cross_origin_opener_policy_allows_popups(self):
+        response = self.client.get("/")
+        self.assertEqual(response.headers.get("Cross-Origin-Opener-Policy"), "same-origin-allow-popups")
+
+    def test_appointment_success_page_renders_with_pdf_download_link(self):
+        day = timezone.localdate() + timedelta(days=1)
+        appt = self.make_appointment(day)
+        appt.payment_status = "Paid"
+        appt.save()
+        self.client.force_login(self.patient_user)
+        response = self.client.get(reverse("patient_appointment_success", args=[appt.booking_reference]))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Payment Successful!")
+        self.assertContains(response, reverse("appointment_pdf", args=[appt.booking_reference]))
+
+
 

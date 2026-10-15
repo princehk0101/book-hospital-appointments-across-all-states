@@ -1,0 +1,112 @@
+{% extends "patient/patient_base.html" %}
+{% block title %}Appointment Confirmed - MeCare HMS{% endblock %}
+{% block page_heading %}<i class="fa-solid fa-circle-check text-success me-2"></i>Appointment Confirmed{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <!-- SUCCESS HERO CARD -->
+            <div class="card shadow-sm border-0 text-center p-4 p-md-5 mb-4 rounded-4 bg-white">
+                <div class="mb-3">
+                    <span class="d-inline-flex justify-content-center align-items-center bg-success-subtle text-success rounded-circle" style="width: 84px; height: 84px;">
+                        <i class="fa-solid fa-check fs-1"></i>
+                    </span>
+                </div>
+                <h2 class="fw-bold text-success mb-2">Payment Successful!</h2>
+                <p class="text-secondary fs-5 mb-3">Your appointment is confirmed / आपका अपॉइंटमेंट कन्फर्म हो गया है।</p>
+                
+                <div class="d-inline-block mx-auto mb-4 p-2 px-3 bg-light rounded-pill border">
+                    <span class="text-muted small">Booking Reference: </span>
+                    <strong class="text-primary font-monospace">{{ appointment.booking_reference }}</strong>
+                </div>
+
+                <!-- ACTION BUTTONS -->
+                <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+                    <a id="downloadSlipBtn" href="{{ pdf_url }}" class="btn btn-success btn-lg rounded-pill px-4 shadow-sm">
+                        <i class="fa-solid fa-file-pdf me-2"></i> Download Appointment Slip (PDF)
+                    </a>
+                    <a href="{% url 'patient_appointments' %}" class="btn btn-outline-primary btn-lg rounded-pill px-4">
+                        <i class="fa-solid fa-calendar-check me-2"></i> My Appointments
+                    </a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENT DETAILS CARD -->
+            <div class="card shadow-sm border-0 rounded-4 p-4 mb-4 bg-white">
+                <h5 class="fw-bold text-primary mb-3">
+                    <i class="fa-solid fa-file-invoice me-2"></i>Booking & Payment Summary
+                </h5>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <small class="text-muted d-block mb-1">Doctor</small>
+                            <div class="fw-bold fs-6">Dr. {{ appointment.doctor.user.get_full_name }}</div>
+                            <small class="text-secondary">{{ appointment.doctor.specialization }} ({{ appointment.doctor.department }})</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <small class="text-muted d-block mb-1">Hospital & District</small>
+                            <div class="fw-bold fs-6">{{ appointment.doctor.hospital.name }}</div>
+                            <small class="text-secondary">{{ appointment.doctor.hospital.district.name }}</small>
+                            {% if appointment.doctor.hospital.address %}
+                            <div class="small text-muted mt-1">{{ appointment.doctor.hospital.address }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <small class="text-muted d-block mb-1">Date & Time</small>
+                            <div class="fw-bold fs-6">
+                                <i class="fa-regular fa-calendar me-1 text-primary"></i>
+                                {{ appointment.date|date:"d F Y" }}
+                            </div>
+                            <div class="text-secondary small mt-1">
+                                <i class="fa-regular fa-clock me-1 text-primary"></i>
+                                {{ appointment.time|time:"h:i A" }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-light rounded-3 h-100">
+                            <small class="text-muted d-block mb-1">Payment Status</small>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-success px-3 py-2 fs-6">
+                                    <i class="fa-solid fa-check-circle me-1"></i> PAID
+                                </span>
+                                <span class="fw-bold text-dark fs-6">₹{{ appointment.payment_amount }}</span>
+                            </div>
+                            {% if appointment.razorpay_payment_id %}
+                            <div class="small text-muted mt-2 font-monospace">
+                                ID: {{ appointment.razorpay_payment_id }}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-3 bg-light rounded-3">
+                            <small class="text-muted d-block mb-1">Patient Details</small>
+                            <span class="fw-semibold">{{ appointment.patient.user.get_full_name|default:appointment.patient.user.username }}</span>
+                            {% if appointment.patient.phone_number %}
+                            <span class="text-muted ms-2">(Phone: {{ appointment.patient.phone_number }})</span>
+                            {% endif %}
+                            {% if appointment.symptoms %}
+                            <div class="small text-secondary mt-1">Symptoms: {{ appointment.symptoms }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INSTRUCTIONS ALERT -->
+            <div class="alert alert-info border-0 rounded-4 p-3 d-flex align-items-start">
+                <i class="fa-solid fa-circle-info fs-4 me-3 text-primary mt-1"></i>
+                <div class="small">
+                    <strong>Important Note:</strong> Please arrive at the hospital desk 15 minutes before your scheduled appointment time. You can present the downloaded PDF slip or mention your Booking Reference at the reception.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

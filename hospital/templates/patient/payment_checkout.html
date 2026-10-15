@@ -28,7 +28,7 @@
                 body: new URLSearchParams(paymentResponse),
             });
             const result = await response.json();
-            if (result.ok) { window.location.assign(result.slip_url); return; }
+            if (result.ok) { window.location.assign(result.success_url || result.slip_url); return; }
             showError(result.error || 'Payment verification failed. Please retry.');
             button.disabled = false;
         } catch (_error) {
@@ -44,21 +44,26 @@
             key: "{{ razorpay_key_id|escapejs }}",
             amount: {{ amount_paise }}, currency: 'INR', name: 'MeCare HMS',
             description: 'Appointment fee', order_id: "{{ appointment.razorpay_order_id|escapejs }}",
-            prefill: {name: "{{ appointment.patient.user.get_full_name|escapejs }}", email: "{{ appointment.patient.user.email|escapejs }}"},
+            prefill: {
+                name: "{{ appointment.patient.user.get_full_name|escapejs }}",
+                email: "{{ appointment.patient.user.email|escapejs }}",
+                contact: "{{ appointment.patient.phone_number|default:''|escapejs }}"
+            },
             handler: response => { callbackReceived = true; verifyPayment(response); },
             modal: {ondismiss: () => {
+                button.disabled = false;
                 if (callbackReceived) return;
                 fetch("{{ failure_url }}", {method: 'POST', headers: {'X-CSRFToken': csrf}});
                 showError('Payment window closed. Please start a new appointment booking.');
             }}
         });
         checkout.on('payment.failed', response => {
+            button.disabled = false;
             callbackReceived = true;
             fetch("{{ failure_url }}", {method: 'POST', headers: {'X-CSRFToken': csrf}});
             showError(response.error?.description || 'Payment failed. Please start a new booking.');
         });
         checkout.open();
-        button.disabled = false;
     });
 })();
 </script>

@@ -776,7 +776,7 @@ def patient_book_appointment(request):
                 return redirect("patient_book_appointment")
             return redirect("patient_payment_checkout", appointment_id=appointment.pk)
         messages.success(request, "Appointment booked successfully. No payment is required.")
-        return redirect("appointment_pdf", booking_reference=appointment.booking_reference)
+        return redirect("patient_appointment_success", booking_reference=appointment.booking_reference)
 
     try:
         appointment_fee = configured_appointment_fee()
@@ -797,7 +797,7 @@ def patient_payment_checkout(request, appointment_id):
         pk=appointment_id, patient=request.user.patient,
     )
     if appointment.payment_status == "Paid":
-        return redirect("appointment_pdf", booking_reference=appointment.booking_reference)
+        return redirect("patient_appointment_success", booking_reference=appointment.booking_reference)
     if appointment.payment_status != "Pending" or not appointment.razorpay_order_id:
         messages.error(request, "This payment is no longer pending. Please book a new appointment.")
         return redirect("patient_appointments")
@@ -814,8 +814,10 @@ def patient_payment_checkout(request, appointment_id):
 @require_POST
 def patient_verify_payment(request, appointment_id):
     appointment = get_object_or_404(Appointment, pk=appointment_id, patient=request.user.patient)
+    success_url = reverse("patient_appointment_success", args=[appointment.booking_reference])
+    slip_url = reverse("appointment_pdf", args=[appointment.booking_reference])
     if appointment.payment_status == "Paid":
-        return JsonResponse({"ok": True, "slip_url": reverse("appointment_pdf", args=[appointment.booking_reference])})
+        return JsonResponse({"ok": True, "success_url": success_url, "slip_url": slip_url})
     if appointment.payment_status != "Pending" or appointment.status != "Pending Payment":
         return JsonResponse({"ok": False, "error": "This appointment payment is no longer pending."}, status=409)
 
@@ -829,8 +831,10 @@ def patient_verify_payment(request, appointment_id):
         verify_appointment_payment(appointment, payment_id, signature)
         with transaction.atomic():
             locked_appointment = Appointment.objects.select_for_update().get(pk=appointment.pk)
+            locked_success_url = reverse("patient_appointment_success", args=[locked_appointment.booking_reference])
+            locked_slip_url = reverse("appointment_pdf", args=[locked_appointment.booking_reference])
             if locked_appointment.payment_status == "Paid":
-                return JsonResponse({"ok": True, "slip_url": reverse("appointment_pdf", args=[locked_appointment.booking_reference])})
+                return JsonResponse({"ok": True, "success_url": locked_success_url, "slip_url": locked_slip_url})
             if locked_appointment.payment_status != "Pending":
                 return JsonResponse({"ok": False, "error": "This payment is no longer pending."}, status=409)
             locked_appointment.payment_status = "Paid"
@@ -842,7 +846,9 @@ def patient_verify_payment(request, appointment_id):
     except Exception:
         return JsonResponse({"ok": False, "error": "Payment was received but could not be linked. Contact hospital support with your Razorpay payment ID."}, status=409)
 
-    return JsonResponse({"ok": True, "slip_url": reverse("appointment_pdf", args=[appointment.booking_reference])})
+    final_success_url = reverse("patient_appointment_success", args=[appointment.booking_reference])
+    final_slip_url = reverse("appointment_pdf", args=[appointment.booking_reference])
+    return JsonResponse({"ok": True, "success_url": final_success_url, "slip_url": final_slip_url})
 
 
 @patient_required
@@ -854,6 +860,22 @@ def patient_payment_failed(request, appointment_id):
         appointment.status = "Cancelled"
         appointment.save(update_fields=["payment_status", "status"])
     return JsonResponse({"ok": True})
+
+
+@patient_required
+def patient_appointment_success(request, booking_reference):
+    appointment = get_object_or_404(
+        Appointment.objects.select_related(
+            "patient__user", "doctor__user", "doctor__hospital", "doctor__hospital__district"
+        ),
+        booking_reference=booking_reference,
+        patient=request.user.patient,
+        payment_status__in=("Paid", "Legacy"),
+    )
+    return render(request, "patient/payment_success.html", {
+        "appointment": appointment,
+        "pdf_url": reverse("appointment_pdf", args=[appointment.booking_reference]),
+    })
 
 
 @patient_required
